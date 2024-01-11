@@ -1,13 +1,5 @@
 function App() {
-  return (
-    <div className="App">
-      <header>Lema was here</header>
-      <p>Hello World!</p>
-      <p1>Collegium</p1>
-      <h2>Creating conflict</h2>
-      <h1>Hi</h1>
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
