@@ -5,12 +5,11 @@
 
 .carousel-image-container {
   width: 100%; 
+  position: relative;
+
 }
 
 .carousel-image {
-  /* width: 100vh; 
-  height: auto;  */
-
   height: 100vh;
   width: 100%;
  
@@ -18,9 +17,21 @@
 
 .changing-text{
   font-size: 50;
+position: absolute;
+bottom: 40%;
+padding: 10px;
+font-size: 30px;
+top: 40%;
+left: 10%;
 
-  color: blue;
+text-align:left;
+width: 60%;
+
+color: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Montserrat;
+font-size: 50px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
 }
-
-
-
