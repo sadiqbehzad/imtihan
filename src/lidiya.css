@@ -1,1 +1,26 @@
+*body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-image-container {
+  width: 100%; 
+}
+
+.carousel-image {
+  /* width: 100vh; 
+  height: auto;  */
+
+  height: 100vh;
+  width: 100%;
+ 
+}
+
+.changing-text{
+  font-size: 50;
+
+  color: blue;
+}
+
+
 
