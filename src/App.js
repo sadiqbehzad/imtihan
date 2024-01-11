@@ -1,13 +1,7 @@
-import ScreensaverCarousel from "./Carousel";
-
+import ScreensaverCarousel from "./components/carousel/Carousel";
 
 function App() {
-  
-  return (
-    <div>
-       
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;
