@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import './lidiya.css'
+import './components/carousel/carousel.css'
+import "./components/button/button.css"
+
+
 
 import App from "./App";
 

@@ -3,17 +3,18 @@ import React, { useEffect, useRef, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './lidiya.css'
+import '../carousel/carousel.css'
+import Button from '../button/Button';
 
 // Import images
-import image1 from './images/pexels-lisa-bourgeault-12487421.jpg';
-import image2 from './images/pexels-roberto-nickson-2478248.jpg';
-import image3 from './images/building-1210677_1280.jpg';
+import image1 from "../../images/drmakete-lab-hsg538WrP0Y-unsplash.png";
+import image2 from "../../images/alex-padurariu-ZKBQmgMyf8s-unsplash.png";
+import image3 from "../../images/anders-jilden-Sc5RKXLBjGg-unsplash.png";
+
 
 const ScreensaverCarousel = () => {
   const sliderRef = useRef(null);
  
-
 
   const [changingTextIndex, setChangingTextIndex] = useState(0);
   const changingTexts = ['A Turnkey Real Estate Development Platform.  Collegium is the Digital Antithesis of Traditional Design & Construction.', 'Collapsing Cost, Schedule, and Risk using Collegium', 'Buyers Guide.  Is a Collegium project right for you?']; // Add your desired texts
@@ -45,23 +46,31 @@ const ScreensaverCarousel = () => {
   };
 
   const images = [image1, image2, image3];
-  const [changingText, setChangingText] = useState('Learn more about Collegium');
-
+ 
   return (
-   <div>
-      <div className="changing-text-container">
-      <p className='changing-text'>{changingTexts[changingTextIndex]}</p>
+    <div className="changing-text-container">
+ 
+  <Slider ref={sliderRef} {...settings}>
+    {images.map((img, index) => (
+      <div key={index} className="carousel-image-container">
+        <img src={img} alt={`Slide ${index + 1}`} className="carousel-image" />
+        
       </div>
-    <Slider ref={sliderRef} {...settings}>
-      {images.map((img, index) => (
-        <div key={index} className="carousel-image-container">
-          <img src={img} alt={`Slide ${index + 1}`} className="carousel-image" />
-          
-        </div>
-      ))}
-    </Slider>
+    ))}
+  </Slider>
+
+    <p className='changing-text'>{changingTexts[changingTextIndex]}</p>
+
+      <Button label="LEARN MORE"/>
+   
+
+    
     </div>
-  );
+  
+);
 };
 
+
 export default ScreensaverCarousel;
+
+
