@@ -62,7 +62,7 @@ const ScreensaverCarousel = () => {
     <p className='changing-text'>{changingTexts[changingTextIndex]}</p>
 
       <Button label="LEARN MORE"/>
-      <Button label="More"/>
+   
 
     
     </div>
