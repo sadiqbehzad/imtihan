@@ -4,14 +4,13 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../carousel/carousel.css'
-
-
-
+import Button from '../button/Button';
 
 // Import images
 import image1 from "../../images/drmakete-lab-hsg538WrP0Y-unsplash.png";
 import image2 from "../../images/alex-padurariu-ZKBQmgMyf8s-unsplash.png";
 import image3 from "../../images/anders-jilden-Sc5RKXLBjGg-unsplash.png";
+
 
 const ScreensaverCarousel = () => {
   const sliderRef = useRef(null);
@@ -25,12 +24,12 @@ const ScreensaverCarousel = () => {
       if (sliderRef.current) {
         sliderRef.current.slickNext();
       }
-    }, 8000);
+    }, 5000);
 
     // Changing text every 5 seconds
     const textIntervalId = setInterval(() => {
       setChangingTextIndex((prevIndex) => (prevIndex + 1) % changingTexts.length);
-    }, 8000);
+    }, 5000);
 
     return () => {
       clearInterval(intervalId);
@@ -51,7 +50,6 @@ const ScreensaverCarousel = () => {
   return (
     <div className="changing-text-container">
  
-    
   <Slider ref={sliderRef} {...settings}>
     {images.map((img, index) => (
       <div key={index} className="carousel-image-container">
@@ -61,12 +59,18 @@ const ScreensaverCarousel = () => {
     ))}
   </Slider>
 
-<p className='changing-text'>{changingTexts[changingTextIndex]}</p>
+    <p className='changing-text'>{changingTexts[changingTextIndex]}</p>
 
-     
+      <Button label="LEARN MORE"/>
+      <Button label="More"/>
+
+    
+    </div>
   
-  </div>
 );
 };
 
+
 export default ScreensaverCarousel;
+
+
