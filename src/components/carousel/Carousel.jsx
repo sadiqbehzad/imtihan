@@ -12,7 +12,7 @@ import image2 from "../../images/alex-padurariu-ZKBQmgMyf8s-unsplash.png";
 import image3 from "../../images/anders-jilden-Sc5RKXLBjGg-unsplash.png";
 
 
-const ScreensaverCarousel = () => {
+const Carousel = () => {
   const sliderRef = useRef(null);
  
 
@@ -71,6 +71,6 @@ const ScreensaverCarousel = () => {
 };
 
 
-export default ScreensaverCarousel;
+export default Carousel;
 
 
