@@ -1,0 +1,57 @@
+.owners-Header-Page{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content: center;
+    height: 60vh;
+    width: 100vw;
+    color:white;
+    background-image: url(../../../images/ownersHeader.png);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    position: relative;
+
+  }
+  .ownersHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 40vh;
+    width: 80vw;
+    margin-left:10vw;
+
+  }
+
+  h1{
+      margin-left:0;
+      margin-bottom:5vh;
+
+  }
+
+  .ownersHeaderButton {
+    padding: 5%;
+    position: relative;
+  }
+  
+  .ownersHeaderButton Button {
+    height: 30%;
+    left: 0%;
+    top: 35%;
+    position: absolute;
+  }
+
+  .ownersHeaderCard {
+    position: absolute;
+    height: 30%;
+    left: 60%;
+    top: 80%;
+  }
+  
+  .ownersHeaderCard ContactCard {
+    height: 30%;
+    left: 0%;
+    top: 35%;
+    position: absolute;
+  }

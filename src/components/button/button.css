@@ -1,21 +1,16 @@
 .btn{
-  position:absolute;
-  width: 188px;
-  height: 48px;
-  color:black;
-  font-size: 16px;
+  width: 25vh;
+  height: 6vh;
+  color:white;
+  font-size: 1.6vh; 
 
+  border-image:  linear-gradient(to right, #1882FF, #36EBCA);
+  border-image-slice: 1; 
+  border-width: 3px;
 
-border-image:  linear-gradient(to right, #1882FF, #36EBCA);
-border-image-slice: 1; 
-border-width: 3px;
-
-background-color:transparent;
-cursor: pointer;  
-bottom: 15%;
-left:10%;
-transition: background-color 0.3s ease;
-
+  background-color:transparent;
+  cursor: pointer;  
+  transition: background-color 0.3s ease;
  }
 
 .btn:active{
@@ -25,7 +20,7 @@ transition: background-color 0.3s ease;
  
 
 .btn:hover {
-  font-size: 20px; /* Change font size on hover */
+  font-size: 2vh;
 }
 .btn::before {
   content: "";
@@ -46,10 +41,10 @@ border-image-slice: 1;
 border-width: 3px;
 border-width: 0 3px 3px 0px;
 
-transform: translate(10px, 10px)
+transform: translate(1vh, 1vh)
 
 }
 
 .btn:active::before {
-  border-width: 0; /* Make the second border disappear when the button is active */
+  border-width: 0; 
 }

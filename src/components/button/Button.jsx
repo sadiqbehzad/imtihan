@@ -1,14 +1,20 @@
 
 import React from "react";
-import './button.css'
+import './button.css';
 
 const Button = (props) => {
-  const {label}=props;
+  const { label, whiteButton } = props;
+  const color = whiteButton === 'blackButton' ? 'black' : 'white';
+  const buttonStyle = {
+    color: color,
+  };
+
   return (
-    <div>
-      <button className='btn'>{label}</button>
-    </div>
+    <button className='btn' style={buttonStyle}>
+      {label}
+    </button>
   );
 };
 
 export default Button;
+

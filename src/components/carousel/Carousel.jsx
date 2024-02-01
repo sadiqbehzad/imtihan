@@ -26,7 +26,7 @@ const Carousel = () => {
       }
     }, 5000);
 
-    // Changing text every 5 seconds
+
     const textIntervalId = setInterval(() => {
       setChangingTextIndex((prevIndex) => (prevIndex + 1) % changingTexts.length);
     }, 5000);
@@ -54,17 +54,14 @@ const Carousel = () => {
     {images.map((img, index) => (
       <div key={index} className="carousel-image-container">
         <img src={img} alt={`Slide ${index + 1}`} className="carousel-image" />
-        
       </div>
     ))}
   </Slider>
 
     <p className='changing-text'>{changingTexts[changingTextIndex]}</p>
 
-      <Button label="LEARN MORE"/>
+      <div className="herButton"><Button label="LEARN MORE"/></div>
    
-
-    
     </div>
   
 );
