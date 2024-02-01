@@ -1,0 +1,58 @@
+
+ .owners-benefits-Page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0a253b;
+  height: 100vh;
+  width: 100vw;
+}
+
+.owners-benefits-Container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 60vh;
+  margin-top: 5vh;
+}
+
+.benefitsContainer,
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 21vw;
+}
+
+.benefitsContainer p {
+  margin-top: 10%;
+  font-size: 2vh;
+  height: 10vh;
+}
+
+.imageContainer {
+  height: 50vh;
+  position: relative;
+}
+
+.benefitsImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0.5vh solid;
+  border-image: linear-gradient(to bottom, darkblue, teal);
+  border-image-slice: 1;
+}
+
+.image-label {
+  position: absolute;
+  bottom: 1%;
+  left: 0.6%;
+  right: 0%;
+  width: 101%;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

@@ -1,0 +1,86 @@
+
+.projectsHeader {
+    color: black;
+    text-align: center;
+    height: 30vh;
+    background-color:#F6FCFC;
+    margin-top:5vh;
+  }
+  
+  h2{
+    margin: 0;
+  }
+  
+  .ProjectPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F6FCFC;
+    color:black;
+    margin:auto;
+  }
+  
+  .projectsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:5vh; 
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    max-width: 20vw;
+    border:none;
+    position:relative;
+    }
+
+  .container p{
+    height: 8vh;
+    margin-top:5%;
+  }
+
+  .image-Container{
+    position: relative;
+    height:35vh;
+    width:20vw;
+    border:none;
+  }
+  
+   .projectImages {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0.4vh solid;
+    border-image: linear-gradient(to bottom, darkblue, teal);
+    border-image-slice: 1;
+  } 
+
+  p {
+    margin-top: 5%;
+  }
+
+  .projectButton {
+    position: relative;
+    text-align: center; 
+    margin-top:8vh;
+  }
+  
+  .projectButton Button {
+  
+    height: 5vh;
+    position: absolute;
+    top: 60%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+  }
+
+ .btn {
+    color:black;
+  }
+  

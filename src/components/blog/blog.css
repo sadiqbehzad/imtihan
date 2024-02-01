@@ -1,0 +1,91 @@
+
+   .Blog {
+    background-color: #0a253b;
+    margin: 0;
+    height:100vh;
+    width:100vw;
+  }
+
+  .BlogHeader {
+    text-align: center;
+    height: 20vh;
+    margin: 0;
+    padding-top:5vh;
+  }
+  
+
+  .BlogHeader h2 {
+    margin-bottom: 3%;
+    font-size: 1.5vw;
+  }
+
+  .Blog h1,
+  .Blog h2,
+  .Blog h3,
+  .Blog p {
+    margin-bottom: 0;
+}
+  
+  .BlogCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:70vh;
+    width:100vw;
+  }
+  
+  .BlogContent {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 35vw;
+    height:65vh;
+    margin:auto;
+
+  }
+  
+
+  .BlogPicture {
+    width: 45vw;
+    margin-left: 3vw;
+    height:55vh;
+    border: 0.5vh solid;
+    border-image: linear-gradient(to bottom, darkblue, teal);
+    border-image-slice: 1;
+  }
+
+  .BlogImage {
+    width: 100%;
+    height: 100%;
+    border:none;
+  }
+  
+  .author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .author p{
+    margin:0;
+  }
+  .LukeImage {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    margin-right: 5vh;
+  }
+  
+
+
+  .blogButton {
+    padding: 5%;
+    position: relative;
+  }
+  
+  .blogButton Button {
+    width: 25%;
+    height: 50%;
+    left: 60%;
+    position: absolute;
+  }
+  
