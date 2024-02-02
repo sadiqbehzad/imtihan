@@ -10,7 +10,7 @@ const Button = (props) => {
   return (
     <div className="btn-container">
       <button className="btn" style={btnStyle}>
-        {label}{" "}
+        {label}
       </button>
     </div>
   );

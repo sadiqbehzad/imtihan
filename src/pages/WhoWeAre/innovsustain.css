@@ -59,6 +59,7 @@
 .sustain-button {
     margin-top: 5vw;
     color: white;
+    margin-left: 0;
 }
 
 @media screen and (max-width: 768px) {

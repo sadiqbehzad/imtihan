@@ -32,7 +32,7 @@ const InnovSustain = () => {
               <img src={sustain} alt="sustainability"></img>
             </div>
             <div className="sustain-button">
-              <Button label="Contact Usaskjflkasjdf lasjdfkj " color="white" />
+              <Button label="Contact Us" color="white" />
             </div>
           </div>
         </div>
