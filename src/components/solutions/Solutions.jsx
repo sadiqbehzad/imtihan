@@ -4,7 +4,7 @@ import Button from "../button/Button";
 
 import Vendors from "../../images/vendors.jpeg";
 import ProjectTeamImage from "../../images/projectTeam.jpeg";
-import Owners from "../../images/Owners.jpeg";
+import Owners from "../../images/owners/Owners.jpeg";
 
 const Card = ({ imageUrl, label, description, to }) => {
   console.log("Rendering Card:", label);

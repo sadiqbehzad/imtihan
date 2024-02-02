@@ -2,7 +2,7 @@
 import React from 'react';
 import './ownersServices.css';
 import Button from "../../../components/button/Button";
-import OwnersGraph from '../../../images/ownersGraph.png';
+import OwnersGraph from '../../../images/owners/ownersGraph.png';
 
 const ServicesHeader = ({ title, label }) => (
   <header className="servicesHeader">
