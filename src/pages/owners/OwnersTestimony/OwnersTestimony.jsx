@@ -1,8 +1,8 @@
 import React from 'react';
 import './ownersTestimony.css';
-import OwnersPic1 from '../../../images/ownersPic1.png';
-import OwnersPic2 from '../../../images/ownersPic2.png';
-import OwnersPic3 from '../../../images/ownersPic3.png';
+import OwnersPic1 from '../../../images/owners/ownersPic1.png';
+import OwnersPic2 from '../../../images/owners/ownersPic2.png';
+import OwnersPic3 from '../../../images/owners/ownersPic3.png';
 import Line from '../../../components/Line';
 
 const ClientsTestimony = () => {
