@@ -1,6 +1,5 @@
 import React from 'react';
 import './footer.css'; 
-import { Link } from 'react-scroll';
 
 import { Icon } from '@iconify/react';
 import linkedinIcon from '@iconify-icons/entypo-social/linkedin';
@@ -52,10 +51,7 @@ const Container = () => {
       
       <div className="footer-section2">
         <h3>About us</h3>
-        <li><Link to="services" smooth={true} duration={500}>Services</Link></li>
-        <li><Link to="blog" smooth={true} duration={500}>Blog</Link></li>
-        <li><Link to="testimony" smooth={true} duration={500}>Partners</Link></li>
-        <li><Link to="testimony" smooth={true} duration={500}>Partners</Link></li>
+        
 
       </div>
 

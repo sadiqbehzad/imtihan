@@ -7,7 +7,7 @@ import Comparison from './components/comparison/Comparison';
 import Testimony from './components/testimony/Testimony';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
-// import Owners from './pages/owners/Owners';
+import Owners from './pages/owners/Owners';
 // import Vendors from './pages/vendors/Vendors';
 // import ProjectTeam from './pages/projectTeam/ProjectTeam';
 

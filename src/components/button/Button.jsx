@@ -1,4 +1,4 @@
-// button.js
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import './button.css';
@@ -10,7 +10,7 @@ const Button = (props) => {
   const buttonStyle = {
     color: color,
   };
-
+  
   const handleClick = () => {
     navigate(to);
   };
