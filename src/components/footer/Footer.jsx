@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css'; 
+import { Link } from 'react-router-dom';
 
 import { Icon } from '@iconify/react';
 import linkedinIcon from '@iconify-icons/entypo-social/linkedin';
@@ -39,13 +40,20 @@ const Container = () => {
       </div>
 
       <div className="footer-section2">
-        <h3>About Collegium</h3>
-        <p>Services</p>
-        <p>Careers</p>
-        <p>Blog</p>
-        <p>Partners</p>
-        <p>FAQ</p>
-        <p>Contact us</p>
+      <h3>About Collegium</h3>
+        <Link to="/#services">
+          <p>Services</p>
+        </Link>
+        <Link to="/">
+          <p>Careers</p>
+        </Link>
+        <Link to="/">
+          <p>Blog</p>
+        </Link>
+        <Link to="/">
+          <p>Partners</p>
+        </Link>
+    
       </div>
 
       <div className="footer-section3">

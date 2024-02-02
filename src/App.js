@@ -32,8 +32,8 @@ function App() {
 
 const Home = () => (
   <>
-    <Carousel />
-    <Solutions />
+    <Carousel id=""/>
+    <Solutions id="services"/>
     <Comparison />
     <Projects />
     <Blog />
