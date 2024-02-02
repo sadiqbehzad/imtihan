@@ -1,6 +1,6 @@
 import "./missionvision.css";
-import mission from "./mission.jpg";
-import vision from "./vision.jpg";
+import mission from "../../images/WhoWeAre/mission.jpg";
+import vision from "../../images/WhoWeAre/vision.jpg";
 
 const MissionVision = () => {
   return (

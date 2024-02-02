@@ -1,6 +1,6 @@
 import Button from "../../components/button/Button";
 import "./innovsustain.css";
-import sustain from "./sustain.jpg";
+import sustain from "../../images/WhoWeAre/sustain.jpg";
 const InnovSustain = () => {
   return (
     <div className="innov-sustain">
