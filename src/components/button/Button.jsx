@@ -1,28 +1,18 @@
-// button.js
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import './button.css';
-
+import "./button.css";
 const Button = (props) => {
-  const { label, whiteButton, to } = props;
-  const navigate = useNavigate();
-  const color = whiteButton === 'blackButton' ? 'black' : 'white';
-  const buttonStyle = {
-    color: color,
-  };
-
-  const handleClick = () => {
-    navigate(to);
+  const { width, label, color } = props;
+  const btnStyle = {
+    width: width || "auto",
+    color: color || "White",
   };
 
   return (
-    <button className='btn' style={buttonStyle} onClick={handleClick}>
-      {label}
-    </button>
+    <div className="btn-container">
+      <button className="btn" style={btnStyle}>
+        {label}{" "}
+      </button>
+    </div>
   );
 };
-
 export default Button;
-
-
-

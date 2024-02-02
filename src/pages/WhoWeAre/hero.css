@@ -1,0 +1,142 @@
+/* * {
+    border: 1px solid yellow;
+} */
+
+.heroSection {
+    position: relative;
+    background-image: url("./heroImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    z-index: -1;
+    margin-top: 5vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    padding-left: 10vw;
+    /* border: solid yellow; */
+    box-sizing: border-box;
+
+}
+.hs-main-container {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    text-align: left;
+    box-sizing: border-box;
+
+}
+.route {
+    font-size: 1vw;
+}
+.title {
+    font-size: 2em;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.subtitle {
+    margin-top: 0;
+    font-size: 1.5vw;
+}
+.herobutton {
+    display: flex;
+    margin-top: 4vw;
+
+}
+.contact-card {
+    background: linear-gradient(to right, #1882FF, #36EBCA); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /* box-sizing: border-box; */
+    width: 28vw;
+    margin-top: -5vw;
+    position: absolute;
+    right: 4vw;
+    z-index: 2;
+
+}
+.contact-card-container {
+    background-color: white;
+    color: black;
+    padding: 1vw 3vw 1vw 3vw;
+    width: 100%;
+    border: 0;
+    /* border: 1px solid red; */
+    margin-top: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+.contact-title {
+    font-size: 0.8vw;
+    font-weight: bold;
+    margin-bottom: 0;
+    
+}
+.contact-number {
+    color: #00215B;
+    font-weight: bolder;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+.contact-email {
+    color: #00215B;
+    font-weight: bolder;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .hero-section {
+        justify-content: center;
+        padding-left: 0;
+    }
+    .main-container{
+        width: 90%;
+        text-align: center;
+        align-items:center;
+    }
+    .route {
+        font-size: 10px;
+    }
+    .subtitle {
+        font-size: 15px;
+    }
+    .description {
+        text-align:center;
+        font-size: 12px;
+    }
+    .contact-card { 
+        width: 100%;
+        position: relative;
+        right: 0;
+        margin-top: 0;
+        box-shadow:none;
+    }
+    .contact-card-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 2px;
+    }
+    .contact-title, .contact-number, .contact-email {
+        font-size: 8px;
+        margin: auto;
+        letter-spacing: 0;
+        
+    }
+
+  }

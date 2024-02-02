@@ -1,0 +1,83 @@
+.innov-sustain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003459;
+    color: white;
+}
+.innovSustain-container {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 4vw;
+}
+.gradient-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #1882FF, #36EBCA); 
+    flex: 1;
+}
+.innovation, .sustainability {
+    display: flex;
+    justify-content: center;
+    align-items:left;
+    flex-direction: column;
+    /* width: 50%; */
+    padding: 6vw;
+    /* border: solid red; */
+
+}
+.innovation {
+    background-color: #003459;
+}
+.sustainability {
+    background-color: #003459;
+    margin-left: 1px;
+}
+.innov-sustain h2 {
+    font-size: 1.7vw;
+}
+.innov-sustain p {
+    font-size: 1.2vw;
+}
+.sustain-img {
+    background: linear-gradient(to bottom, #1882FF, #36EBCA); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+}
+.sustain-img img {
+    width: 99%;
+    height: 99%;
+    object-fit: cover;
+
+}
+.sustain-button {
+    margin-top: 5vw;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .innovSustain-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .innov-sustain h2 {
+        font-size: 15px;
+    }
+    .innov-sustain p {
+        font-size: 12px;
+    }
+    .gradient-div {
+        background: linear-gradient(to right, #1882FF, #36EBCA); 
+    }
+    .sustainability {
+        margin-left: 0;
+        margin-top: 1px;
+    }
+};
+    

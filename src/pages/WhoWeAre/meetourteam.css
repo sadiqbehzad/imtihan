@@ -1,0 +1,95 @@
+.meetourteam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    box-sizing: border-box;
+}
+.team-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.title h2 {
+    font-size: 3vw;
+}
+.team-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+.person-a, .person-b, .person-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+}
+.team-gradient-div {
+    background: linear-gradient(to bottom, #1882FF, #36EBCA); 
+    width: 25vw;
+    height: 33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.person-a-pic-name, .person-b-pic-name, .person-c-pic-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 99%;
+    position: relative;
+}
+.person-a-pic-name img, .person-b-pic-name img, .person-c-pic-name img {
+    width: 99.99%;
+    height: 99.99%;
+    object-fit: cover;
+    
+} 
+.person-a-name, .person-b-name, .person-c-name{
+    position:absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    transition: font-size 10ms ease-in-out;
+}
+.team-gradient-div:hover .person-a-name, .team-gradient-div:hover .person-b-name, .team-gradient-div:hover .person-c-name{
+    background-color: rgba(54, 235, 202, 0.7);
+    color: black;
+    font-size: 1.5vw;
+
+}
+@media screen and (max-width: 768px){
+    .team-details {
+        flex-direction: column;
+    }
+    .title h2 {
+        font-size: 20px;
+    }
+    .person-a, .person-b, .person-c {
+        width: 300px;
+    }
+    .team-gradient-div {
+        width: 300px;
+        height: 400px;
+
+    }
+    .person-a-description, .person-b-description, .person-c-description {
+        text-align: center;
+    }
+    .team-gradient-div:hover .person-a-name, .team-gradient-div:hover .person-b-name, .team-gradient-div:hover .person-c-name{
+        font-size: 16px;
+    
+    }
+}
