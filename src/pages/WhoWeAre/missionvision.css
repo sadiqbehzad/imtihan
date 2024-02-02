@@ -1,0 +1,136 @@
+.mission-vision {
+    position: relative;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6FCFC;
+    color: black;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    box-sizing: border-box;
+
+}
+.mv-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    box-sizing: border-box;
+}
+.mv-title-gradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1882FF, #36EBCA); 
+
+}
+.mv-title {
+    font-size: 1.7vw;
+    margin-bottom: 0;
+    /* border-bottom: 2px solid black; */
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: #F6FCFC;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+}
+.mv-title span {
+    font-size: 4.5vw;
+ 
+}
+
+.missionVision-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    
+}
+.gradient {
+    background: linear-gradient(to bottom, #1882FF, #36EBCA); 
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission, .vision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 99%;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  
+}
+.mission img, .vision img {
+    width: 99.9%;
+    height: 99.9%;
+    object-fit: cover;
+}
+.grey-mask {
+    background: linear-gradient(to bottom, rgba(74, 83, 88, 0.7), rgba(53, 61, 66, 0.7)); 
+    width: 99.9%;
+    height: 99.9%;
+    position: absolute;
+
+}
+.mission-text, .vision-text {
+    position: absolute;
+    color: white;
+    width: 70%;
+}
+.mission-text h2, .vision-text h2 {
+    color: #E0FBFC;
+    margin-bottom: 4vw;
+}
+.mission-text p, .vision-text p{
+   font-size: 1.2vw;
+}
+
+.mission:hover .grey-mask, .vision:hover .grey-mask{
+    background: rgba(224, 251, 252, 0.9);
+    
+}
+.mission:hover .mission-text, .vision:hover .vision-text,.mission:hover .mission-text h2, .vision:hover .vision-text h2{
+    color: black;
+    
+    
+}
+
+@media screen and (max-width: 768px) { 
+    
+    .mv-title h2 {
+        font-size: 15px;
+    }
+    .mv-sub-title {
+        width: 300px;
+    }
+    .mv-sub-title p {
+        text-align:center;
+        font-size: 12px;
+    }
+
+    
+    .missionVision-cards {
+        flex-direction: column;
+    }
+    .gradient {
+        width: 300px;
+        height: 300px;
+    }
+
+    .mission-text h2, .vision-text h2 {
+        font-size: 20px;
+    }
+    .mission-text p, .vision-text p {
+        font-size: 12px;
+        text-align: left;
+    }
+}

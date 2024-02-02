@@ -7,7 +7,7 @@ import ProjectTeamImage from "../../images/projectTeam.jpeg";
 import Owners from "../../images/Owners.jpeg";
 
 const Card = ({ imageUrl, label, description, to }) => {
-  console.log('Rendering Card:', label);
+  console.log("Rendering Card:", label);
   return (
     <div className="card">
       <img src={imageUrl} className="cardsImage" alt={label} />
@@ -38,19 +38,19 @@ const Solutions = () => {
           imageUrl={Owners}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           label="Owners"
-          to="/owners" 
+          to="/owners"
         />
         <Card
           imageUrl={Vendors}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           label="Vendors"
-          // to="/vendors" 
+          // to="/vendors"
         />
         <Card
           imageUrl={ProjectTeamImage}
           description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
           label="Project Team"
-          // to="/project-team" 
+          // to="/project-team"
         />
       </div>
     </div>
