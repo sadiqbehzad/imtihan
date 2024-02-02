@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css'; 
+import { Link } from 'react-router-dom';
 
 import { Icon } from '@iconify/react';
 import linkedinIcon from '@iconify-icons/entypo-social/linkedin';
@@ -30,22 +31,39 @@ const Container = () => {
           in the construction ecosystem. 
         </p>
         <div className="icons">
-          <Icon icon={linkedinIcon}  height="1.5em"/>
-          <Icon icon={twitterIcon} height="1.5em"/>
-          <Icon icon={instagramIcon} height="1.5em"/> 
-          <Icon icon={youtubeIcon} height="1.5em"/> 
-          <Icon icon={facebookIcon} height="1.5em"/>
+          <a href="https://ca.linkedin.com/company/collegium-technologies-inc" target="_blank" rel="noopener noreferrer">
+            <Icon icon={linkedinIcon} height="1.5em" />
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <Icon icon={twitterIcon} height="1.5em" />
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <Icon icon={instagramIcon} height="1.5em" />
+          </a>
+          <a href="YOUR_LINK_TO_YOUTUBE" target="_blank" rel="noopener noreferrer">
+            <Icon icon={youtubeIcon} height="1.5em" />
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <Icon icon={facebookIcon} height="1.5em" />
+          </a>
         </div>
       </div>
 
       <div className="footer-section2">
-        <h3>About Collegium</h3>
-        <p>Services</p>
-        <p>Careers</p>
-        <p>Blog</p>
-        <p>Partners</p>
-        <p>FAQ</p>
-        <p>Contact us</p>
+      <h3>About Collegium</h3>
+        <Link to="/#services">
+          <p>Services</p>
+        </Link>
+        <Link to="/">
+          <p>Careers</p>
+        </Link>
+        <Link to="/">
+          <p>Blog</p>
+        </Link>
+        <Link to="/">
+          <p>Partners</p>
+        </Link>
+    
       </div>
 
       <div className="footer-section3">
@@ -65,3 +83,5 @@ const Footer = () =>{
   )
 }
 export default Footer;
+
+

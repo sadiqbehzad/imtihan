@@ -1,42 +1,25 @@
-.btn-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
 .btn{
-  position:absolute;
-  width: 14vw;
-  height:2.7vw;
+  width: 25vh;
+  height: 6vh;
   color:white;
-  font-size: 1.1vw;
+  font-size: 1.6vh; 
 
-border-image:  linear-gradient(to right, #1882FF, #36EBCA);
-border-image-slice: 1; 
-border-width: 0.15vw;
+  border-image:  linear-gradient(to right, #1882FF, #36EBCA);
+  border-image-slice: 1; 
+  border-width: 3px;
 
-background-color:transparent;
-cursor: pointer;  
-bottom: 15%;
-left:10%;
-transition: background-color 0.5s ease-in-out;
-
+  background-color:transparent;
+  cursor: pointer;  
+  transition: background-color 0.3s ease;
  }
-
 
 .btn:active{
   background-image:radial-gradient(50% 50% at 50% 50%, #4A5358 0%, #353D42 100%)
  }
  
- 
 
 .btn:hover {
-  font-size: 1.3vw; /* Change font size on hover */
-  background: linear-gradient(to right, #1882FF, #36EBCA );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  font-size: 2vh;
 }
 .btn::before {
   content: "";
@@ -45,22 +28,22 @@ transition: background-color 0.5s ease-in-out;
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0.15vw solid transparent;
+  border: 2px solid transparent;
   box-sizing: border-box;
-  transition: border-color 0.5s ease-in-out;
+  transition: border-color 0.3s ease;
 }
 
 .btn:hover::before {
 
 border-image:  linear-gradient(to right, #1882FF, #36EBCA);
 border-image-slice: 1; 
+border-width: 3px;
+border-width: 0 3px 3px 0px;
 
-border-width: 0 0.15vw 0.15vw 0;
-
-transform: translate(0.6vw, 0.6vw)
+transform: translate(1vh, 1vh)
 
 }
 
 .btn:active::before {
-  border-width: 0; /* Make the second border disappear when the button is active */
+  border-width: 0; 
 }

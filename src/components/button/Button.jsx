@@ -1,7 +1,6 @@
-import React from "react";
+
 import "./button.css";
 import { useNavigate } from "react-router-dom";
-
 
   const Button = (props) => {
     const { width, label, color, to } = props;
@@ -25,4 +24,5 @@ import { useNavigate } from "react-router-dom";
   };
   
 export default Button;
+
 

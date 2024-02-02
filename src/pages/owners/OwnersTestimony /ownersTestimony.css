@@ -1,0 +1,55 @@
+.owners-Testimony-Page{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  background-color: #F6FCFC;
+  height: 100vh;
+  width: 100vw;
+  color:black;
+}
+
+.owners-Testimony-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap:10vw;
+}
+.clientTestimony,
+.ownersPartners{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientTestimony{
+  width:80vw;
+  height:50vh;
+  /* background:green; */
+}
+.ownersPartners{
+  height:20vh;
+  width:10vw  
+}
+.clientTestimony p{
+  margin-top:5vh;
+
+}
+.PartnersImage{
+  height:10vh;
+  width:100%;
+  margin-bottom:5vh;
+}
+
+.PartnersImage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border:none;
+}
+
+h1{
+  /* background:blue; */
+  margin-bottom:0vh;
+}
+
