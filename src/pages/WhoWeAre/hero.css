@@ -4,7 +4,7 @@
 
 .heroSection {
     position: relative;
-    background-image: url("./heroImg.png");
+    background-image: url("../../images/WhoWeAre/heroImg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

@@ -1,7 +1,7 @@
 import "./meetourteam.css";
-import firstPerson from "./person-a.jpg";
-import secondPerson from "./person-b.jpg";
-import thirdPerson from "./person-c.jpg";
+import firstPerson from "../../images/WhoWeAre/person-a.jpg";
+import secondPerson from "../../images/WhoWeAre/person-b.jpg";
+import thirdPerson from "../../images/WhoWeAre/person-c.jpg";
 
 const MeetOurTeam = () => {
   return (
