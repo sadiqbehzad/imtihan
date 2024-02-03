@@ -35,7 +35,9 @@
 .sustainability {
     background-color: #003459;
     margin-left: 1px;
+    border: solid red;
 }
+
 .innov-sustain h2 {
     font-size: 1.7vw;
 }
@@ -58,8 +60,9 @@
 }
 .sustain-button {
     margin-top: 5vw;
-    color: white;
-    margin-left: 0;
+    margin-left: auto;
+    
+
 }
 
 @media screen and (max-width: 768px) {

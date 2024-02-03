@@ -19,8 +19,9 @@ const WhoWeAre = () => {
             next-gen digital tools to deliver Real Estate Development projects
             with exceptional outcomes.
           </p>
+
           <div className="herobutton">
-            <Button label="Contact Us" width="10vw" />
+            <Button label="Contact Us" />
           </div>
         </div>
       </div>

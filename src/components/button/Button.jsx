@@ -1,18 +1,24 @@
-import React from "react";
 import "./button.css";
 const Button = (props) => {
-  const { width, label, color } = props;
-  const btnStyle = {
-    width: width || "auto",
-    color: color || "White",
+  const { label, color } = props;
+  const myButtonStyle = {
+    color: color || "white",
+    // width: width || "auto",
   };
-
+  const myButtonReflectionStyle = {
+    color: "transparent",
+    // width: width || "auto",
+  };
   return (
-    <div className="btn-container">
-      <button className="btn" style={btnStyle}>
+    <div className="myButton-container">
+      <button className="myBttn" style={myButtonStyle}>
+        {label}
+      </button>
+      <button className="myBttn-reflection" style={myButtonReflectionStyle}>
         {label}
       </button>
     </div>
   );
 };
+
 export default Button;

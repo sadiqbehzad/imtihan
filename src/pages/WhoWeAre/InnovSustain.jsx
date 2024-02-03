@@ -1,6 +1,6 @@
-import Button from "../../components/button/Button";
 import "./innovsustain.css";
 import sustain from "../../images/WhoWeAre/sustain.jpg";
+import Button from "../../components/button/Button";
 const InnovSustain = () => {
   return (
     <div className="innov-sustain">
@@ -32,7 +32,7 @@ const InnovSustain = () => {
               <img src={sustain} alt="sustainability"></img>
             </div>
             <div className="sustain-button">
-              <Button label="Contact Us" color="white" />
+              <Button label="Contact Us" />
             </div>
           </div>
         </div>
