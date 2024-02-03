@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 //Import HomePage-components//
 import Navbar from './components/navbar/Navbar';
-import Carousel from '../src/components/carousel/Carousel';
-import Solutions from '../src/components/solutions/Solutions';
+import Carousel from './components/carousel/Carousel'
+import Solutions from './components/solutions/Solutions';
 import Comparison from './components/comparison/Comparison';
 import Blog from './components/blog/Blog';
 import Testimony from './components/testimony/Testimony';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
+
 
 //Import Pages//
 import Owners from './pages/owners/Owners';
