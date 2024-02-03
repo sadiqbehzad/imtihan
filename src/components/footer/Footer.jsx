@@ -40,7 +40,7 @@ const Container = () => {
           <a href="" target="_blank" rel="noopener noreferrer">
             <Icon icon={instagramIcon} height="1.5em" />
           </a>
-          <a href="YOUR_LINK_TO_YOUTUBE" target="_blank" rel="noopener noreferrer">
+          <a href="" target="_blank" rel="noopener noreferrer">
             <Icon icon={youtubeIcon} height="1.5em" />
           </a>
           <a href="" target="_blank" rel="noopener noreferrer">
@@ -51,7 +51,7 @@ const Container = () => {
 
       <div className="footer-section2">
       <h3>About Collegium</h3>
-        <Link to="/#services">
+        <Link to= "/#services">
           <p>Services</p>
         </Link>
         <Link to="/">
@@ -63,7 +63,6 @@ const Container = () => {
         <Link to="/">
           <p>Partners</p>
         </Link>
-    
       </div>
 
       <div className="footer-section3">
