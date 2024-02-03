@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 //Import HomePage-components//
+import Navbar from './components/navbar/Navbar';
 import Carousel from '../src/components/carousel/Carousel';
 import Solutions from '../src/components/solutions/Solutions';
 import Comparison from './components/comparison/Comparison';
@@ -36,6 +37,7 @@ function App() {
 
 const Home = () => (
   <>
+    <Navbar/>
     <Carousel id=""/>
     <Solutions id="services"/>
     <Comparison />
