@@ -1,15 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+//Import HomePage-components//
 import Carousel from '../src/components/carousel/Carousel';
 import Solutions from '../src/components/solutions/Solutions';
-import Blog from './components/blog/Blog';
 import Comparison from './components/comparison/Comparison';
+import Blog from './components/blog/Blog';
 import Testimony from './components/testimony/Testimony';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
+
+//Import Pages//
 import Owners from './pages/owners/Owners';
-// import Vendors from './pages/vendors/Vendors';
-// import ProjectTeam from './pages/projectTeam/ProjectTeam';
+
 
 function App() {
   return (
@@ -23,8 +26,6 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/footer" element={<Footer />} />
         <Route path="/owners" element={<Owners />} />
-        {/* <Route path="/vendors" element={<Vendors />} />
-        <Route path="/project-team" element={<ProjectTeam />} /> */}
       </Routes>
     </Router>
   );
