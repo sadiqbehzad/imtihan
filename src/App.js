@@ -16,6 +16,7 @@ import WhoWeAre from './pages/whoweare/WhoWeAre';
 
 
 
+
 function App() {
   return (
     <Router>
@@ -27,8 +28,10 @@ function App() {
         <Route path="/testimony" element={<Testimony />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/footer" element={<Footer />} />
+
         <Route path="/owners" element={<Owners />} />
         <Route path="/whoweare" element={<WhoWeAre />} />
+
       </Routes>
     </Router>
   );

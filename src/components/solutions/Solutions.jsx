@@ -14,7 +14,7 @@ const Card = ({ imageUrl, label, description, to }) => {
       <div className="cardContent">
         <p>{description}</p>
         <div className="solutionButton">
-          <Button label={label} to={to} />
+          <Button width="2x" label={label} to={to} />
         </div>
       </div>
     </div>

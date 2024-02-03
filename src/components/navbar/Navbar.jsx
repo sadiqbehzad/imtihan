@@ -1,6 +1,9 @@
+
+  
 import "./navbar.css";
 import logo from "./logo.png";
 import { useState, useEffect, useCallback } from "react";
+
 
 const Navbar = (props) => {
   const { background } = props;
@@ -225,5 +228,6 @@ const Navbar = (props) => {
     </nav>
   );
 };
+
 
 export default Navbar;
