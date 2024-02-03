@@ -8,8 +8,9 @@ import Testimony from './components/testimony/Testimony';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 import Owners from './pages/owners/Owners';
-// import Vendors from './pages/vendors/Vendors';
-// import ProjectTeam from './pages/projectTeam/ProjectTeam';
+import WhoWeAre from'./pages/Whoweare/WhoWeAre';
+
+
 
 function App() {
   return (
@@ -22,9 +23,10 @@ function App() {
         <Route path="/testimony" element={<Testimony />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/footer" element={<Footer />} />
+
         <Route path="/owners" element={<Owners />} />
-        {/* <Route path="/vendors" element={<Vendors />} />
-        <Route path="/project-team" element={<ProjectTeam />} /> */}
+        <Route path="/WhoWeAre" element={<WhoWeAre />} />
+      
       </Routes>
     </Router>
   );
