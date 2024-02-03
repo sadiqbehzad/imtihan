@@ -12,6 +12,8 @@ import Footer from './components/footer/Footer';
 
 //Import Pages//
 import Owners from './pages/owners/Owners';
+import WhoWeAre from './pages/whoweare/WhoWeAre';
+
 
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/footer" element={<Footer />} />
         <Route path="/owners" element={<Owners />} />
+        <Route path="/whoweare" element={<WhoWeAre />} />
       </Routes>
     </Router>
   );
