@@ -1,10 +1,9 @@
 
-
-
   
 import "./navbar.css";
 import logo from "./logo.png";
 import { useState, useEffect, useCallback } from "react";
+
 
 const Navbar = (props) => {
   const { background } = props;
@@ -230,7 +229,5 @@ const Navbar = (props) => {
   );
 };
 
+
 export default Navbar;
-
-
-
