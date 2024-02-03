@@ -32,7 +32,6 @@ function App() {
 
         <Route path="/owners" element={<Owners />} />
         <Route path="/whoweare" element={<WhoWeAre />} />
-
       </Routes>
     </Router>
   );
