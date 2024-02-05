@@ -12,7 +12,7 @@ const Card = ({ imageUrl, label, description, to }) => {
     <div className="card">
       <img src={imageUrl} className="cardsImage" alt={label} />
       <div className="cardContent">
-        <p>{description}</p>
+        <div className="labelText"><p>{description}</p></div>
         <div className="solutionButton">
           <Button width="2x" label={label} to={to} />
         </div>
