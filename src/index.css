@@ -9,6 +9,11 @@ body{
 
 }
 
+.homepage-nav-cont{
+  /* position: absolute; */
+}
+
+
 
 @media screen and (max-width: 768px) {
   body{
@@ -16,3 +21,4 @@ body{
 
   }
 }
+

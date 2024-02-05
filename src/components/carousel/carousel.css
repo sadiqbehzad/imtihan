@@ -4,10 +4,15 @@ body, html {
   padding: 0;
 }
 
-.carousel-image-container {
+/* .carousel-image-container {
   width: 100%;
   position: relative;
   overflow: hidden;
+} */
+
+.changing-text-container{
+  position: relative;
+  margin-top: -7vw;
 }
 
 .carousel-image {
@@ -18,7 +23,7 @@ body, html {
 
 .changing-text {
   position: absolute;
-  bottom: 5%; /* Adjust as needed */
+  bottom: 30%; /* Adjust as needed */
   left: 10%;
   padding: 10px;
   width: 80%; /* Adjust as needed */
@@ -35,10 +40,8 @@ body, html {
 
  .herButton{
    top:80%;
-   left:20%;
+   left:10%;
    position:absolute;
   }
 
-  .herButton Button{
-    /* position:absolute; */
-  }
+  
