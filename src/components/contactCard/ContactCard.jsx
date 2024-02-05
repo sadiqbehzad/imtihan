@@ -1,9 +1,11 @@
-import "./myContactCard.css";
-const MyContactCard = () => {
+import "./contactCard.css";
+
+const ContactCard = ({props}) => {
+
   return (
     <div className="contact-card">
       <div className="contact-card-container">
-        <p className="contact-title">CALL / EMAIL US TODAY</p>
+        <h2 className="contact-title">CALL / EMAIL US TODAY</h2>
         <p className="contact-number">+1(234)-567-1234</p>
         <p className="contact-email">collegium@collegium.com</p>
       </div>
@@ -11,4 +13,4 @@ const MyContactCard = () => {
   );
 };
 
-export default MyContactCard;
+export default ContactCard;

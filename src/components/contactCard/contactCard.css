@@ -1,0 +1,27 @@
+.contact-card {
+    background: linear-gradient(to right, #1882FF, #36EBCA); 
+    display: flex;
+    width: 28vw;
+    height: 8vw;
+    /* z-index: 2; */
+}
+.contact-card-container{
+    display:flex;
+    justify-content: center;
+    align-items:left;
+
+}
+.contact-title {
+    font-size: 0.8vw;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.contact-number,.contact-email {
+    color: #00215B;
+    font-weight: bolder;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+
+

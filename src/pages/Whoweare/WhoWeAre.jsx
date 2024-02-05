@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import InnovSustain from "./InnovSustain";
 import MeetOurTeam from "./MeetOurTeam";
 import MissionVision from "./MissionVision";
-import MyContactCard from "../../components/contactCard/MyContactCard";
+import ContactCard from "../../components/contactCard/ContactCard";
 import "./whoweare.css";
 
 const WhoWeAre = () => {
@@ -19,7 +19,7 @@ const WhoWeAre = () => {
       <Navbar />
       <Hero />
       <div className="contact-card-div">
-        <MyContactCard />
+        <ContactCard />
       </div>
       <MissionVision />
       <InnovSustain />
