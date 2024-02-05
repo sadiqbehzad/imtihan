@@ -1,7 +1,5 @@
 import "./hero.css";
-
 import Button from "../../components/button/Button";
-
 const WhoWeAre = () => {
   return (
     <div>
@@ -19,17 +17,9 @@ const WhoWeAre = () => {
             next-gen digital tools to deliver Real Estate Development projects
             with exceptional outcomes.
           </p>
-
           <div className="herobutton">
             <Button label="Contact Us" />
           </div>
-        </div>
-      </div>
-      <div className="contact-card">
-        <div className="contact-card-container">
-          <p className="contact-title">CALL / EMAIL US TODAY</p>
-          <p className="contact-number">+1(234)-567-1234</p>
-          <p className="contact-email">collegium@collegium.com</p>
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ const MissionVision = () => {
             </p>
           </div>
           <div className="missionVision-cards">
-            <div className="gradient">
+            <div className="mv-gradient">
               <div className="mission">
                 <img src={mission} alt="mission" />
                 <div className="grey-mask"></div>
@@ -38,7 +38,7 @@ const MissionVision = () => {
                 </div>
               </div>
             </div>
-            <div className="gradient">
+            <div className="mv-gradient">
               <div className="vision">
                 <img src={vision} alt="vision" />
                 <div className="grey-mask"></div>

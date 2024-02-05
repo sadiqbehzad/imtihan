@@ -8,7 +8,8 @@ import Testimony from "./components/testimony/Testimony";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/footer/Footer";
 import Owners from "./pages/owners/Owners";
-import WhoWeAre from "./pages/WhoWeAre/WhoWeAre";
+import WhoWeAre from "./pages/whoWeAre/WhoWeAre";
+import Blogs from "./pages/blogs/Blogs";
 // import Vendors from './pages/vendors/Vendors';
 // import ProjectTeam from './pages/projectTeam/ProjectTeam';
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/footer" element={<Footer />} />
         <Route path="/owners" element={<Owners />} />
         <Route path="/who-we-are" element={<WhoWeAre />} />
+        <Route path="/blogs" element={<Blogs />} />
         {/* <Route path="/vendors" element={<Vendors />} />
         <Route path="/project-team" element={<ProjectTeam />} /> */}
       </Routes>

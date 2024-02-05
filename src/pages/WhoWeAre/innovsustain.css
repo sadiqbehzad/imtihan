@@ -35,11 +35,12 @@
 .sustainability {
     background-color: #003459;
     margin-left: 1px;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .innov-sustain h2 {
     font-size: 1.7vw;
+    margin-bottom: 2vw;
 }
 .innov-sustain p {
     font-size: 1.2vw;
@@ -50,7 +51,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 15vh;
+    height: 18vh;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 .sustain-img img {
     width: 99%;
@@ -59,7 +62,8 @@
 
 }
 .sustain-button {
-    margin-top: 5vw;
+    display: flex;
+    margin-top: 3vw;
     margin-left: auto;
     
 
@@ -71,7 +75,7 @@
         text-align: center;
     }
     .innov-sustain h2 {
-        font-size: 15px;
+        font-size: 20px;
     }
     .innov-sustain p {
         font-size: 12px;
@@ -82,6 +86,15 @@
     .sustainability {
         margin-left: 0;
         margin-top: 1px;
+    }
+    .sustain-button {
+ 
+        margin-left: initial;
+        justify-content: center;
+        align-items: center;
+        
+        
+    
     }
 };
     

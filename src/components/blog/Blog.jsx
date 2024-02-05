@@ -1,8 +1,8 @@
-import React from 'react';
-import './blog.css';
-import Button from '../button/Button';
-import LukeImage from '../../images/Luke.jpeg';
-import BlogImage from '../../images/BlogImage.png';
+import React from "react";
+import "./blog.css";
+import Button from "../button/Button";
+import LukeImage from "../../images/Luke.jpeg";
+import BlogImage from "../../images/BlogImage.png";
 
 const Header = ({ title, title2 }) => (
   <header className="BlogHeader">
@@ -20,7 +20,9 @@ const BlogCard = ({ title, description, label }) => (
     <div className="BlogContent">
       <h3 className="BlogHeadline">{title}</h3>
       <p className="mainParagraph">{description}</p>
-      <div className="blogButton"><Button label={label} /></div>
+      <div className="blogButton">
+        <Button label={label} />
+      </div>
       <div className="author">
         <img className="LukeImage" src={LukeImage} alt="Luke West" />
         <p>Luke West</p>
