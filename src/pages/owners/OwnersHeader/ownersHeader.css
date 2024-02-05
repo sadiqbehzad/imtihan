@@ -29,16 +29,11 @@
   }
 
   .ownersHeaderButton {
-    padding: 5%;
-    position: relative;
-  }
-  
-  .ownersHeaderButton Button {
-    height: 30%;
-    left: 0%;
-    top: 35%;
-    position: absolute;
-  }
+    display: flex;
+    margin-top: 3vw;
+    margin-left: left;
+}
+
 
   .ownersHeaderCard {
     position: absolute;
