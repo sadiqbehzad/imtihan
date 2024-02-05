@@ -1,0 +1,36 @@
+.blogOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+
+    border: solid yellow;
+}
+.blogOne-text {
+    background-color: white;
+    color: black;
+    width: 50%;
+    border: solid yellow;
+   
+}
+.blogOne-title{
+
+}
+.blogOne-description{
+
+}
+.blogOne-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+    width: 50%;
+    border: solid red;
+   
+}
+.blogOne-pic img {
+    object-fit: cover;
+
+}
