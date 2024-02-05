@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from './components/navbar/Navbar';
 import Carousel from "./components/carousel/Carousel";
 import Solutions from "./components/solutions/Solutions";
 import Blog from "./components/blog/Blog";
@@ -8,9 +9,12 @@ import Testimony from "./components/testimony/Testimony";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/footer/Footer";
 import Owners from "./pages/owners/Owners";
+
 import WhoWeAre from "./pages/whoweare/WhoWeAre";
 import Blogs from "./pages/blogs/Blogs";
 import Navbar from "./components/navbar/Navbar";
+
+
 
 
 function App() {

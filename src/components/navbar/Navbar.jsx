@@ -131,7 +131,7 @@ const Navbar = (props) => {
           className={`nav-list ${isNavListVisible ? "show" : ""} `}
           onClick={(e) => e.stopPropagation()}
         >
-          <li className="close-button" onClick={closeMenu}>
+          <li className="close-button" onClick={closeMenu}> X
           </li>
           <li>
             <a className="nav-link" href="/">
