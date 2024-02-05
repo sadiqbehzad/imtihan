@@ -8,8 +8,9 @@ import Testimony from "./components/testimony/Testimony";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/footer/Footer";
 import Owners from "./pages/owners/Owners";
-import WhoWeAre from "./pages/whoWeAre/WhoWeAre";
+import WhoWeAre from "./pages/whoweare/WhoWeAre";
 import Blogs from "./pages/blogs/Blogs";
+import Navbar from "./components/navbar/Navbar";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
 
 const Home = () => (
   <>
+    <Navbar />
     <Carousel />
     <Solutions />
     <Comparison />
