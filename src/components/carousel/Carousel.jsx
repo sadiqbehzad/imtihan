@@ -60,7 +60,7 @@ const Carousel = () => {
 
     <p className='changing-text'>{changingTexts[changingTextIndex]}</p>
 
-      <div className="herButton"><Button label="Learn more"/></div>
+      <div className="herButton"><Button label="Learn More"/></div>
    
     </div>
   
