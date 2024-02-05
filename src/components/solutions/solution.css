@@ -69,16 +69,20 @@
 }
 
 .solutionButton {
-  padding: 2vh;
+  display: flex;
   position: relative;
-  /* width: 100vh; */
+  text-align: center; 
+  margin-top:2vh;
 }
 
-.solutionButton Button {
-  /* left: 38%; */
-  /* top:40%; */
-  /* position: absolute; */
-} 
+/* .solutionButton Button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+} */
+
 
 @media screen and (max-width: 768px) {
   

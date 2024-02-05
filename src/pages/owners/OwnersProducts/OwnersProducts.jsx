@@ -1,9 +1,9 @@
 
 import React from 'react';
 import './ownersProducts.css';
-import OwnersPic1 from '../../../images/ownersPic1.png';
-import OwnersPic2 from '../../../images/ownersPic2.png';
-import OwnersPic3 from '../../../images/ownersPic3.png';
+import OwnersPic1 from '../../../images/owners/ownersPic1.png';
+import OwnersPic2 from '../../../images/owners/ownersPic2.png';
+import OwnersPic3 from '../../../images/owners/ownersPic3.png';
 
 const Product = ({ imageUrl, title, description, containerClass }) => (
   <div className={containerClass}>

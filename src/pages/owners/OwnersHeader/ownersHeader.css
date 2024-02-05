@@ -6,13 +6,13 @@
     height: 60vh;
     width: 100vw;
     color:white;
-    background-image: url(../../../images/ownersHeader.png);
+    background-image: url(../../../images/owners/ownersHeader.png);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat; 
     position: relative;
-
   }
+  
   .ownersHeader{
     display: flex;
     flex-direction: column;
@@ -21,13 +21,11 @@
     height: 40vh;
     width: 80vw;
     margin-left:10vw;
-
   }
 
   h1{
       margin-left:0;
       margin-bottom:5vh;
-
   }
 
   .ownersHeaderButton {
@@ -55,3 +53,29 @@
     top: 35%;
     position: absolute;
   }
+
+
+
+@media screen and (max-width: 768px) {
+    
+  .owners-Header-Page{
+      justify-content: center;
+      padding-left: 0;
+  }
+  .ownersHeader{
+      width: 90%;
+      text-align: center;
+      align-items:center;
+  }
+  .route {
+      font-size: 10px;
+  }
+  .subtitle {
+      font-size: 15px;
+  }
+  .description {
+      text-align:center;
+      font-size: 12px;
+  }
+
+}

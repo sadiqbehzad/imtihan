@@ -5,12 +5,11 @@ import ContactCard from "../../contactCard/ContactCard";
 
 
 
-
-
 const OwnerHeader = ({ title1,title2, description, label }) => (
   <header className="ownersHeader">
-    <h1>{title1}</h1>
-    <h2>{title2}</h2>
+    <p className="route">Home/Who We Are</p>
+    <h1 className="title">{title1}</h1>
+    <h2 className="subtitle-">{title2}</h2>
     <p>{description}</p>
     <div className="ownersHeaderButton"><Button label={label} /></div>
     <div className="ownersHeaderCard"><ContactCard/></div>
