@@ -4,12 +4,6 @@ body, html {
   padding: 0;
 }
 
-/* .carousel-image-container {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-} */
-
 .changing-text-container{
   position: relative;
   margin-top: -7vw;
