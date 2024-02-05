@@ -12,6 +12,9 @@ import Owners from "./pages/owners/Owners";
 
 import WhoWeAre from "./pages/whoweare/WhoWeAre";
 import Blogs from "./pages/blogs/Blogs";
+import Navbar from "./components/navbar/Navbar";
+
+
 
 
 function App() {
@@ -35,7 +38,7 @@ function App() {
 
 const Home = () => (
   <>
-    <div className="homepage-nav-cont"><Navbar background="transparent"/></div>
+    <Navbar />
     <Carousel />
     <Solutions />
     <Comparison />
