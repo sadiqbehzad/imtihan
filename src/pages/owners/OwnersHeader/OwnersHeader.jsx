@@ -1,7 +1,7 @@
 import React from 'react';
 import './ownersHeader.css';
 import Button from "../../../components/button/Button";
-import ContactCard from "../../contactCard/ContactCard";
+import ContactCard from "../../contactCard/ContactCard1";
 
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './contactCard.css';
+import './contactCard1.css';
 
 const ContactCard = () => {
   return (

@@ -1,6 +1,7 @@
 import BlogOne from "./BlogOne";
 import BlogsHero from "./BlogsHero";
 import { useEffect } from "react";
+
 const Blogs = () => {
   useEffect(() => {
     document.body.style.backgroundColor = "#0A253B";
