@@ -15,8 +15,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
     background-color: #F6FCFC;
     color:black;
     margin:auto;
@@ -28,12 +26,13 @@
     align-items: center;
     justify-content: space-evenly;
     padding:5vh; 
+    height:70vh;
   }
   
   .container {
     display: flex;
     flex-direction: column;
-    height: 45vh;
+    height: 50vh;
     max-width: 20vw;
     border:none;
     position:relative;
