@@ -65,22 +65,10 @@
   }
 
   .projectButton {
-    position: relative;
-    text-align: center; 
-    margin-top:8vh;
-  }
-  
-  .projectButton Button {
-  
-    height: 5vh;
-    position: absolute;
-    top: 60%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:black;
-  }
-
- .btn {
-    color:black;
+      display: flex;
+      margin-top: 3vw;
+      margin-left: auto;
+      justify-items: center;
+      justify-content: center;
   }
   

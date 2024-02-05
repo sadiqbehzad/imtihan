@@ -67,16 +67,14 @@
 } 
 
 .testimonyButton {
-  padding: 5%; 
-  position: relative;
+  display: flex;
+  margin-top: 3vw;
+  margin-left: auto;
+  justify-items: center;
+  justify-content: right;
 } 
 
-.testimonyButton button {
-  width: 35%;
-  height: 70%;
-  left: 60%;
-  position: absolute;
-}
+
 
 
   

@@ -57,15 +57,9 @@
 }
 
 .comparisonButton {
-  position: relative;
-  text-align: center; 
-  margin-top:10vh;
+  display: flex;
+      margin-top: 3vw;
+      margin-left: auto;
+      justify-items: center;
+      justify-content: right;
 }
-
-/* .comparisonButton Button {
-  position: absolute;
-  top: 60%; 
-  left: 70%;
-  transform: translate(-50%, -50%);
-  color:black;
-} */

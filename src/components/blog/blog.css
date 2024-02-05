@@ -75,6 +75,9 @@
   }
 
   .blogButton {
-    padding: 5%;
-    position: relative;
+    display: flex;
+    margin-top: 3vw;
+    margin-left: auto;
+    justify-items: center;
+    justify-content: center;
   }

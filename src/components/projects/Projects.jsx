@@ -15,12 +15,13 @@ const Container = ({ imageUrl, label, description }) => {
 };
 
 const Header = ({ title1, title2, label }) => {
-  const whiteButton = 'blackButton';
+
   return (
     <header className="projectsHeader">
       <h1>{title1}</h1>
       <h2>{title2}</h2>
-      <div className="projectButton"><Button label="Browse All Project" whiteButton={whiteButton} /></div>
+      <div className="projectButton">
+        <Button color="black" width ="15vw"label="Browse All Project"/></div>
     </header>
   );
 };
