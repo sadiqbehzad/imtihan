@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from '../../components/navbar/Navbar';
 import Carousel from "./components/carousel/Carousel";
 import Solutions from "./components/solutions/Solutions";
 import Blog from "./components/blog/Blog";
@@ -17,6 +18,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        
         <Route path="/" element={<Home />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/blog" element={<Blog />} />
@@ -36,6 +38,7 @@ function App() {
 
 const Home = () => (
   <>
+    <Navbar />
     <Carousel />
     <Solutions />
     <Comparison />
