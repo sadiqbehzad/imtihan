@@ -1,20 +1,27 @@
 import "./button.css";
+import { useNavigate } from "react-router-dom";
+
 const Button = (props) => {
-  const { label, color } = props;
+  const { label, color, to } = props;
+  const navigate = useNavigate();
+
   const myButtonStyle = {
-    color: color || "white",
-    // width: width || "auto",
+    color: color || "white"
+  
   };
   const myButtonReflectionStyle = {
-    color: "transparent",
-    // width: width || "auto",
+    color: "transparent"
+  };
+
+  const handleClick = () => {
+    navigate(to);
   };
   return (
     <div className="myButton-container">
-      <button className="myBttn" style={myButtonStyle}>
+      <button className="myBttn" style={myButtonStyle} onClick={handleClick}>
         {label}
       </button>
-      <button className="myBttn-reflection" style={myButtonReflectionStyle}>
+      <button className="myBttn-reflection" style={myButtonReflectionStyle} onClick={handleClick}>
         {label}
       </button>
     </div>
