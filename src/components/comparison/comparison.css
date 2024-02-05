@@ -1,5 +1,4 @@
 .comparison-container {
-  height: 100vh;
   display: flex;
   flex-direction: row; 
   color: white;
@@ -10,9 +9,9 @@
 .text-container{
   display: flex;
   flex-direction: column;
-  margin-left:5vh;
-  padding-top:15vh;
+  margin-left:10vh;
   width:35vw;
+  margin-top:25vh;
 }
 
 .text-container h1{
@@ -25,14 +24,13 @@
 
 
 .comparison-container li {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .white-container,
 .dark-container {
   width:25vw;
-  margin:1vh;
-  
+
   font-size: 1.2vw;
   font-style: normal;
   font-weight: lighter;
@@ -56,11 +54,11 @@
   background-image: linear-gradient(#1fc1c3, #0f0f0f);
   color: white;
 }
-
 .comparisonButton {
-  position: absolute;
-  text-align: center; 
-  margin-top:10%;
-  margin-left: 20%;
-}
 
+  display: flex;
+  margin-top: 3vw;
+  margin-left: auto;
+  justify-items: center;
+  justify-content: right;
+}

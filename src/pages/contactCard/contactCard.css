@@ -13,3 +13,10 @@
     margin:0;
     padding:5vh;
 }
+
+@media screen and (max-width: 768px) {
+    .contactCard {
+      width: 80vw; 
+      padding: 3vh; 
+    }
+  }

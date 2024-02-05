@@ -2,13 +2,14 @@ import "./button.css";
 import { useNavigate } from "react-router-dom";
 
 const Button = (props) => {
-  const { label, color, to } = props;
+  const { label, color, width,to } = props;
   const navigate = useNavigate();
 
   const myButtonStyle = {
-    color: color || "white"
-  
+    color: color || "white",
+    width: width || "auto",
   };
+  
   const myButtonReflectionStyle = {
     color: "transparent"
   };
