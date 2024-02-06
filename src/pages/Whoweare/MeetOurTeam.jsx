@@ -1,7 +1,7 @@
 import "./meetourteam.css";
-import firstPerson from "../../images/whoWeAre/person-a.jpg";
-import secondPerson from "../../images/whoWeAre/person-b.jpg";
-import thirdPerson from "../../images/whoWeAre/person-c.jpg";
+import firstPerson from "../../images/WhoWeAre/person-a.jpg";
+import secondPerson from "../../images/WhoWeAre/person-b.jpg";
+import thirdPerson from "../../images/WhoWeAre/person-c.jpg";
 
 const personsData = [
   {

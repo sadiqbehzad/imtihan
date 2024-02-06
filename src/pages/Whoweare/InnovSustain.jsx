@@ -1,5 +1,5 @@
 import "./innovsustain.css";
-import sustain from "../../images/whoWeAre/sustain.jpg";
+import sustain from "../../images/WhoWeAre/sustain.jpg";
 import Button from "../../components/button/Button";
 const InnovSustain = () => {
   return (
