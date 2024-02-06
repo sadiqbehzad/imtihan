@@ -21,7 +21,6 @@
 
   .Blog h1,
   .Blog h2,
-  .Blog h3,
   .Blog p {
     margin-bottom: 0;
 }
@@ -74,18 +73,11 @@
     border-radius: 50%;
     margin-right: 5vh;
   }
-  
-
 
   .blogButton {
-    padding: 5%;
-    position: relative;
+    display: flex;
+    margin-top: 3vw;
+    margin-left: auto;
+    justify-items: center;
+    justify-content: center;
   }
-  
-  .blogButton Button {
-    width: 25%;
-    height: 50%;
-    left: 60%;
-    position: absolute;
-  }
-  

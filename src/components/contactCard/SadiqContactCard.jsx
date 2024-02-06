@@ -1,5 +1,7 @@
-import "./myContactCard.css";
-const MyContactCard = () => {
+
+import "./sadiqContactCard.css";
+
+const ContactCard = () => {
   return (
     <div className="contact-card">
       <div className="contact-card-container">
@@ -11,4 +13,4 @@ const MyContactCard = () => {
   );
 };
 
-export default MyContactCard;
+export default ContactCard;
