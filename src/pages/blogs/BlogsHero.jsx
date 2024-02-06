@@ -1,13 +1,9 @@
 import "./blogshero.css";
-import Navbar from "../../components/navbar/Navbar";
 import blogsHero from "../../images/blogs/blogs-hero.jpg";
 
 const BlogsHero = () => {
   return (
     <div>
-      <div className="myNavbar">
-        <Navbar background="transparent" />
-      </div>
       <div className="blogs-hero">
         <img src={blogsHero} alt="blogs-hero" />
         <div className="blogs-hero-text">

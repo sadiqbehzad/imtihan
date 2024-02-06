@@ -2,10 +2,8 @@
 // import "../comparison/comparison.css"
 // import Button from '../button/Button';
 
-
-
 // const Comparison = () => {
-//     return ( 
+//     return (
 //       <div className="comparison-container">
 //       <div className="text-container">
 //         <div className="title-container-why-different">
@@ -17,13 +15,11 @@
 //         <div>
 //           <Button label="CONTACT US"/>
 //         </div>
-       
-        
+
 //       </div>
 //         </div>
 //       </div>
-    
-    
+
 //       <div className="white-container">
 //         <h2>TRADITIONAL CONSTRUCTION MANAGEMENT</h2>
 //         <ul style={{ listStyleType: 'square'}}>
@@ -33,9 +29,9 @@
 //           <li>Lorem ipsum dolor sit amet consectetur.</li>
 //           <li>Lorem ipsum dolor sit amet consectetur.</li>
 //         </ul>
-    
+
 //       </div>
-  
+
 //       <div className="dark-container">
 //         <h2>COLLEGIUM CONSTRUCTION MANAGEMENT</h2>
 //         <ul style={{ listStyleType: 'square'}} >
@@ -45,19 +41,16 @@
 //           <li >Lorem ipsum dolor sit amet consectetur.</li>
 //           <li>Lorem ipsum dolor sit amet consectetur.</li>
 //         </ul>
-       
+
 //       </div>
 //       </div>
-    
+
 //          );
 //       }
-    
-  
-  
-  
+
 import React from "react";
 import "../comparison/comparison.css";
-import Button from '../button/Button';
+import Button from "../button/Button";
 
 const Comparison = () => {
   return (
@@ -80,7 +73,7 @@ const Comparison = () => {
 
       <div className="white-container">
         <h3>TRADITIONAL CONSTRUCTION MANAGEMENT</h3>
-        <ul style={{ listStyleType: 'square' }}>
+        <ul style={{ listStyleType: "square" }}>
           {Array.from({ length: 5 }).map((_, index) => (
             <li key={index}>Lorem ipsum dolor sit amet consectetur.</li>
           ))}
@@ -89,7 +82,7 @@ const Comparison = () => {
 
       <div className="dark-container">
         <h3>COLLEGIUM CONSTRUCTION MANAGEMENT</h3>
-        <ul style={{ listStyleType: 'square' }}>
+        <ul style={{ listStyleType: "square" }}>
           {Array.from({ length: 5 }).map((_, index) => (
             <li key={index}>Lorem ipsum dolor sit amet consectetur.</li>
           ))}

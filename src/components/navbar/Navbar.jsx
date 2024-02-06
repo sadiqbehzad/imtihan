@@ -1,9 +1,6 @@
-
-  
 import "./navbar.css";
 import logo from "./logo.png";
 import { useState, useEffect, useCallback } from "react";
-
 
 const Navbar = (props) => {
   const { background } = props;
@@ -132,6 +129,7 @@ const Navbar = (props) => {
           onClick={(e) => e.stopPropagation()}
         >
           <li className="close-button" onClick={closeMenu}>
+            ❌
           </li>
           <li>
             <a className="nav-link" href="/">
@@ -228,6 +226,5 @@ const Navbar = (props) => {
     </nav>
   );
 };
-
 
 export default Navbar;
