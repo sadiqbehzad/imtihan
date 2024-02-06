@@ -10,7 +10,7 @@ import Footer from "./components/footer/Footer";
 import Owners from "./pages/owners/Owners";
 import WhoWeAre from "./pages/whoweare/WhoWeAre";
 import Blogs from "./pages/blogs/Blogs";
-
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
@@ -35,6 +35,7 @@ function App() {
 
 const Home = () => (
   <>
+    <Navbar background="transparent" />
     <Carousel />
     <Solutions />
     <Comparison />
