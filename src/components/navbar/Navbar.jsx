@@ -1,38 +1,43 @@
 import "./navbar.css";
-import logo from "./logo.png";
+
 import { useState, useEffect, useCallback } from "react";
 
 const Navbar = (props) => {
-  const { background } = props;
+  const { background, color } = props;
   const navStyle = {
-    backgroundColor: background || "",
+    backgroundColor: background || "black",
+    color: color || "white",
   };
+  const navStyleMobile = {
+    color: "white",
+  };
+
   //Hook for menu arrow:
-  const [isServicesArrowChanged, setIsServicesArrowChanged] = useState("⋁");
+  const [isServicesArrowChanged, setIsServicesArrowChanged] = useState("▼");
   const servicesArrowDocumentClick = () => {
-    setIsServicesArrowChanged("⋁");
+    setIsServicesArrowChanged("▼");
   };
-  const [isResourcesArrowChanged, setIsResourcesArrowChanged] = useState("⋁");
+  const [isResourcesArrowChanged, setIsResourcesArrowChanged] = useState("▼");
   const resourcesArrowDocumentClick = () => {
-    setIsResourcesArrowChanged("⋁");
+    setIsResourcesArrowChanged("▼");
   };
-  const [isAboutUsArrowChanged, setIsAboutUsArrowChanged] = useState("⋁");
+  const [isAboutUsArrowChanged, setIsAboutUsArrowChanged] = useState("▼");
   const aboutusArrowDocumentClick = () => {
-    setIsAboutUsArrowChanged("⋁");
+    setIsAboutUsArrowChanged("▼");
   };
   //Hook for Services:
   const [isServicesVisible, setIsServicesVisible] = useState(false);
   const toggleServicesMenu = () => {
     if (isServicesVisible) {
       setIsServicesVisible(false);
-      setIsServicesArrowChanged("⋁");
+      setIsServicesArrowChanged("▼");
     } else {
       setIsServicesVisible(true);
       setIsResourcesVisible(false);
       setIsAboutUsVisible(false);
-      setIsServicesArrowChanged("⋀");
-      setIsResourcesArrowChanged("⋁");
-      setIsAboutUsArrowChanged("⋁");
+      setIsServicesArrowChanged("▲");
+      setIsResourcesArrowChanged("▼");
+      setIsAboutUsArrowChanged("▼");
     }
   };
   const servicesDocumentClick = () => {
@@ -43,14 +48,14 @@ const Navbar = (props) => {
   const toggleResourcesMenu = () => {
     if (isResourcesVisible) {
       setIsResourcesVisible(false);
-      setIsResourcesArrowChanged("⋁");
+      setIsResourcesArrowChanged("▼");
     } else {
       setIsResourcesVisible(true);
       setIsServicesVisible(false);
       setIsAboutUsVisible(false);
-      setIsResourcesArrowChanged("⋀");
-      setIsServicesArrowChanged("⋁");
-      setIsAboutUsArrowChanged("⋁");
+      setIsResourcesArrowChanged("▲");
+      setIsServicesArrowChanged("▼");
+      setIsAboutUsArrowChanged("▼");
     }
   };
   const resourcesDocumentClick = () => {
@@ -61,14 +66,14 @@ const Navbar = (props) => {
   const toggleAboutUsMenu = () => {
     if (isAboutUsVisible) {
       setIsAboutUsVisible(false);
-      setIsAboutUsArrowChanged("⋁");
+      setIsAboutUsArrowChanged("▼");
     } else {
       setIsAboutUsVisible(true);
       setIsServicesVisible(false);
       setIsResourcesVisible(false);
-      setIsAboutUsArrowChanged("⋀");
-      setIsServicesArrowChanged("⋁");
-      setIsResourcesArrowChanged("⋁");
+      setIsAboutUsArrowChanged("▲");
+      setIsServicesArrowChanged("▼");
+      setIsResourcesArrowChanged("▼");
     }
   };
   const aboutUsDocumentClick = () => {
@@ -102,6 +107,15 @@ const Navbar = (props) => {
   };
 
   useEffect(() => {
+    // if (
+    //   navStyle.backgroundColor === "transparent" ||
+    //   navStyle.backgroundColor === "white"
+    // ) {
+    //   setIsLogoBlack(false);
+    // } else {
+    //   setIsLogoBlack(true);
+    // }
+
     document.addEventListener("click", handleDocumentClick);
     window.addEventListener("resize", handleResize);
 
@@ -118,26 +132,41 @@ const Navbar = (props) => {
     <nav class="navbar" style={navStyle}>
       <div className="navbar-container">
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <a href="/">
+            <h3>collegium</h3>
+          </a>
         </div>
-        <div className="menu-icon" onClick={handleHamburgerClick}>
+        <div
+          className="menu-icon"
+          onClick={handleHamburgerClick}
+          style={navStyle}
+        >
           &#9776;
         </div>
 
         <ul
-          className={`nav-list ${isNavListVisible ? "show" : ""} `}
+          className={`nav-list ${isNavListVisible ? "show" : ""}`}
           onClick={(e) => e.stopPropagation()}
+          style={navStyleMobile}
         >
           <li className="close-button" onClick={closeMenu}>
-            ❌
+            &#10006;
           </li>
           <li>
-            <a className="nav-link" href="/">
+            <a
+              className="nav-link"
+              href="/"
+              style={isNavListVisible ? navStyleMobile : navStyle}
+            >
               Home
             </a>
           </li>
           <li>
-            <div className="nav-link" onClick={toggleServicesMenu}>
+            <div
+              className="nav-link"
+              onClick={toggleServicesMenu}
+              style={isNavListVisible ? navStyleMobile : navStyle}
+            >
               Services&nbsp;&nbsp;&nbsp;
               <span className="arrow">{isServicesArrowChanged}</span>
             </div>
@@ -162,7 +191,11 @@ const Navbar = (props) => {
             )}
           </li>
           <li>
-            <div className="nav-link" onClick={toggleResourcesMenu}>
+            <div
+              className="nav-link"
+              onClick={toggleResourcesMenu}
+              style={isNavListVisible ? navStyleMobile : navStyle}
+            >
               Resources&nbsp;&nbsp;&nbsp;
               <span className="arrow">{isResourcesArrowChanged}</span>
             </div>
@@ -187,7 +220,11 @@ const Navbar = (props) => {
             )}
           </li>
           <li>
-            <div className="nav-link" onClick={toggleAboutUsMenu}>
+            <div
+              className="nav-link"
+              onClick={toggleAboutUsMenu}
+              style={isNavListVisible ? navStyleMobile : navStyle}
+            >
               About Us&nbsp;&nbsp;&nbsp;
               <span className="arrow">{isAboutUsArrowChanged}</span>
             </div>
@@ -212,12 +249,20 @@ const Navbar = (props) => {
             )}
           </li>
           <li>
-            <a className="nav-link" href="/careers">
+            <a
+              className="nav-link"
+              href="/careers"
+              style={isNavListVisible ? navStyleMobile : navStyle}
+            >
               Careers
             </a>
           </li>
           <li>
-            <a className="nav-link" href="/faqs">
+            <a
+              className="nav-link"
+              href="/faqs"
+              style={isNavListVisible ? navStyleMobile : navStyle}
+            >
               FAQs
             </a>
           </li>

@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
     box-sizing: border-box;
 }
 .team-main-container {
@@ -16,6 +16,7 @@
 .team-title {
     font-size: 1.7vw;
     margin-bottom: 2.5vw;
+    color: black;
 }
 .team-details {
     display: flex;
@@ -72,6 +73,7 @@
 }
 .person-description {
     margin-top: 2vw;
+    color: black;
 }
 .team-gradient-div:hover .person-name{
     background-color: rgba(54, 235, 202, 0.7);
@@ -85,6 +87,7 @@
     .team-title {
         margin-top: 10px;
         font-size: 16px;
+        
     }
     .team-gradient-div {
         width: 300px;

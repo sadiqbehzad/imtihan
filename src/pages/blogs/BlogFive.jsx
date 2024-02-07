@@ -1,13 +1,13 @@
 import "./blogone.css";
-import blogone from "../../images/blogs/blogone.jpg";
+import blogfive from "../../images/blogs/blogfive.jpg";
 import Button from "../../components/button/Button";
-const BlogOne = () => {
+const BlogFive = () => {
   return (
     <div className="blogOne-container">
       <div className="blogOne">
         <div className="blogOne-text">
           <div className="blogOne-title">
-            <h2>Blogs List: Blog 1</h2>
+            <h2>Blogs List: Blog 5</h2>
           </div>
           <div className="blogOne-description">
             <p>
@@ -18,15 +18,15 @@ const BlogOne = () => {
           </div>
           <div className="blogOne-date-button">
             <p>July 4, 2023</p>
-            <Button label={"Learn More"} color="black" to="/blogs/blog1" />
+            <Button label={"Learn More"} color="black" to="/blogs/blog5" />
           </div>
         </div>
         <div className="blogOne-pic">
-          <img src={blogone} alt="blog-one" />
+          <img src={blogfive} alt="blog-five" />
         </div>
       </div>
     </div>
   );
 };
 
-export default BlogOne;
+export default BlogFive;
