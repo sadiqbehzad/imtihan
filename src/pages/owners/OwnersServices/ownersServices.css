@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   background-color: #0a253b;
+  gap:2vw;
+  padding: 0vw 5vw 0vw 5vw;
 }
 
 /* Header */
@@ -9,16 +11,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 5vh;
+  padding-top: 5vh;
 }
 
-.servicesHeader h1 {
-  margin-left: 3vw;
-}
 
 /* Main-container */
 .servicesContainer {
   display: flex;
+  align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -33,11 +33,13 @@
 }
 
 .contentContainer h3 {
-  margin-top: 0;
+  margin-top: 0.9vw;
+  font-size: 1.5vw;
 }
 
 .contentContainer p {
   margin: 0;
+  font-size: 1.3vw;
 }
 
 /* Sidebar-services-container */
@@ -45,16 +47,17 @@
   width: 25vw; 
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
+  margin-top: 0;
 }
 
 .services p {
-  margin-bottom: 10%;
+  margin-bottom: 1vw;
+  font-size: 1.3vw;
 }
 
 .serviceImageContainer {
-  margin-top: 3vh;
-  width: 90%; 
+  margin-top: 3vw;
+  width: 95%; 
 }
 
 .serviceImageContainer img {
@@ -66,28 +69,55 @@
 /* ServicesButton */
 .ServicesButton {
   display: flex;
-  margin-left: auto; /* Adjusted margin to push the button to the right */
-}
+  margin-left: auto;}
+  
 
 @media (max-width: 768px) {
-  
-  .contentContainer {
-    width: 60vw;
+  .ownerServicesPage{
+    display: flex;
+    align-items: center;
   }
-  .contentContainer  h3{
-    font-size:15px;
+  .servicesHeader{
+    width:80%;
   }
-  .contentContainer  p{
-    font-size:12px;
-    text-align: left;
+
+  .servicesHeader h1{
+    font-size:20px;
   }
-  .services {
-    width: 25vw;
-    height:auto;
-    padding:0;
+  .servicesContainer{
+    display: flex;
+    flex-direction: column; 
+    gap:3vw;
+    width:80%;
+  }
+  .services{
+    /* display:flex;
+    flex-direction: row; */
+    width:80%;
+    height:20%;
+    margin:0;
   }
   .services p{
     font-size:12px;
-    text-align: left;
+    margin-bottom:0;
   }
-}
+
+  .contentContainer{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    width:auto;
+
+  }
+  .contentContainer p{
+    font-size:12px;
+  }
+
+  .contentContainer h3{
+    font-size:18px;
+  }
+  
+
+  
+  };
+    

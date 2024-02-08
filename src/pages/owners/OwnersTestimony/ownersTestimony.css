@@ -4,6 +4,7 @@
   align-items:center;
   background-color: #F6FCFC;
   color:black;
+  padding-bottom:20vh;
 }
 .owners-Testimony-Page h2 {
   padding-bottom:10vh;
@@ -46,7 +47,6 @@
   flex-direction: column;
   justify-items: center;
   width:10vw;
-  padding-bottom:20vh;
 }
 .ownersPartners p{
   margin:0;
@@ -64,17 +64,35 @@
   border:none;
 }
 
-@media screen and (max-width: 768px) {
 
+  @media (max-width: 768px) {
+    .ownersTestimonyHeader{
+      width:70%;
+      text-align: center;
+    }
+    
+   .owners-Partners-Container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width:40%;
+      max-width: none; 
+    }
+    .ownersPartners{
+      width:auto;
+      max-width: none; 
+      height:auto;
+    }
+
+    .PartnersImage{
+      width:auto;
+    }
+  
+  
   .owners-Testimony-Page h2{
     font-size: 16px;
   }
 
-  .ownersTestimonyHeader,
-  .ownersPartners{
-    flex-direction: column; 
-  } 
-  
   .ownersTestimonyHeader p{
   font-size: 12px;
   margin-bottom: 10px;
@@ -86,6 +104,6 @@
   .ownersPartners p{
     font-size: 12px;
     padding: 10px;
-  }
+  } 
   
-}
+  }
