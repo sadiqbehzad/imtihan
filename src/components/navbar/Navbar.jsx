@@ -136,7 +136,9 @@ const Navbar = (props) => {
       <div className="navbar-container">
         <div className="logo">
           <a href="/">
+
             <h3  style={h3Style}>collegium</h3>
+
           </a>
         </div>
         <div
