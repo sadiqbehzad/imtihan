@@ -76,20 +76,34 @@ a{
     width: 60%;
   }
   .footer-section1,.footer-section2, .footer-section3 {
-    width: 50%;
+    width: 80%;
     margin:0%;
+    height:auto;
   }
   
-  .footer-section1 h3 {
+  .footer-section1 h2 {
     font-size: 25px;
+    margin-bottom: 5%;
   }
-  
+  .footer-section1 {
+    font-display: flex;
+    /* gap:3vw; */
+  }
   .footer-section2, .footer-section3,
   h3 {
     font-size: 18px;
   }
+  .footer-section1
+  p {
+    font-size: 12px;
+  }
   
-  .footer-section1, .footer-section2, .footer-section3,
+  .footer-section2
+  p {
+    font-size: 12px;
+  }
+  
+  .footer-section3
   p {
     font-size: 12px;
   }

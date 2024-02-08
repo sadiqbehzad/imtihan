@@ -19,7 +19,7 @@
 .bottom-Products-Container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   gap: 15vw;
 }
 
@@ -52,7 +52,16 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .owners-Products-Page h1{
+    font-size: 25px;
+    text-align: center;
+  }
 
+  .top-Products-Container,
+  .bottom-Products-Container {
+  width:70%;
+  gap:
+}
   .topProducts,
   .bottomProducts,
   h3 {

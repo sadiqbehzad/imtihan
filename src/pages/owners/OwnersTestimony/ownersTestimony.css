@@ -32,6 +32,7 @@
 
 .ownersTestimonyHeader p{
   margin-top:5vh;
+  font-size: 1.3vw;
 }
 
 .ownersTestimonyHeader h1{
@@ -39,8 +40,6 @@
   font-size: 4vw;
   font-weight: bolder;
 }
-
-
 
 .ownersPartners{
   display:flex;
@@ -50,6 +49,7 @@
 }
 .ownersPartners p{
   margin:0;
+  font-size: 1.3vw;
 }
 
 .PartnersImage{

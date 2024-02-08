@@ -58,6 +58,9 @@
 .serviceImageContainer {
   margin-top: 3vw;
   width: 95%; 
+  border: 0.5vh solid;
+  border-image: linear-gradient(to right, #1882FF, #36EBCA);
+  border-image-slice: 1;
 }
 
 .serviceImageContainer img {

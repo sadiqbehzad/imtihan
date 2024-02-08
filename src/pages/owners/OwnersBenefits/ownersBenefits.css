@@ -33,7 +33,7 @@
 .imageContainer {
   position: relative;
   border: 0.5vh solid;
-  border-image: linear-gradient(to bottom, darkblue, teal);
+  border-image: linear-gradient(to right, #1882FF, #36EBCA);
   border-image-slice: 1;
 }
 
