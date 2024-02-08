@@ -133,7 +133,7 @@ const Navbar = (props) => {
       <div className="navbar-container">
         <div className="logo">
           <a href="/">
-            <h3>collegium</h3>
+            <h3 style={navStyle}>collegium</h3>
           </a>
         </div>
         <div
