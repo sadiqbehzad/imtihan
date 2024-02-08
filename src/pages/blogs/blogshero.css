@@ -25,14 +25,14 @@
     box-sizing: border-box;
     
 }
-.blogs-route{
+.blogs-route p{
     font-size: 1vw;
 }
-.blogs-title {
-font-size: 2vw;
-font-weight: bolder;
+.blogs-title h2 {
+    font-size: 3vw;
+    font-weight: bolder;
 }
-.blogs-subtitle {
+.blogs-subtitle p{
     font-size: 1.5vw;
 }
 

@@ -60,8 +60,8 @@ h3 {
   .top-Products-Container,
   .bottom-Products-Container {
   width:70%;
-  gap:
-}
+  }
+
   .topProducts,
   .bottomProducts,
   h3 {
@@ -72,9 +72,9 @@ h3 {
   p {
     font-size: 12px; 
   }
-  
+}
   
   
 
-} 
+
 
