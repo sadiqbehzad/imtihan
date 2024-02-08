@@ -45,7 +45,7 @@
   display:flex;
   flex-direction: column;
   justify-items: center;
-  width:10vw;
+  width:15vw;
 }
 .ownersPartners p{
   margin:0;
@@ -54,6 +54,7 @@
 
 .PartnersImage{
   width:100%;
+  height:8vw;
   margin-bottom:1vh;
 }
 
@@ -68,6 +69,7 @@
   @media (max-width: 768px) {
     .ownersTestimonyHeader{
       width:70%;
+      height:auto;
       text-align: center;
     }
     
@@ -75,17 +77,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width:40%;
+      width:80%;
       max-width: none; 
     }
     .ownersPartners{
-      width:auto;
+      width:80%;
       max-width: none; 
       height:auto;
     }
 
     .PartnersImage{
-      width:auto;
+      width:80%;
     }
   
   
