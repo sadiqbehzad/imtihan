@@ -7,6 +7,7 @@ import OwnersTestimony from './OwnersTestimony/OwnersTestimony';
 import OwnersProducts from './OwnersProducts/OwnersProducts';
 import OwnerHeader from './OwnersHeader/OwnersHeader';
 import { useEffect } from "react";
+import ContactCard from '../../components/contactCard/SadiqContactCard';
 
 const Owners = () => {
   useEffect(() => {
@@ -17,8 +18,11 @@ const Owners = () => {
   }, []);
   return (
     <>
-    <Navbar />
+    <Navbar background="#0A253B" color="white" />
     <OwnerHeader />
+    <div className="contact-card-div">
+    <ContactCard />
+    </div>
     <OwnersBenefits />
     <OwnersTestimony />
     <OwnersServices />
