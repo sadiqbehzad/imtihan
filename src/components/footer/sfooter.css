@@ -139,6 +139,7 @@
         display: flex;
         gap: 10px;
         margin-top: 10px;
+        
 
     }
     .sfooter-contacts .sfooter-contacts-links {
@@ -147,7 +148,9 @@
     .sfooter-about .sfooter-links li{
         font-size: 12px;
         padding: 0;
+        
     }
+
     .sfooter-contacts .sfooter-contacts-links li{
         font-size: 12px;
         padding: 0;

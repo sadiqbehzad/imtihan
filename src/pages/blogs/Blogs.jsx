@@ -17,7 +17,10 @@ const Blogs = () => {
       <Navbar background="#0A253B" color="white" />
       <BlogsHero />
       <BlogOne />
-      <BlogsList />
+      <div style={{ marginTop: "5vw" }}>
+        <BlogsList />
+      </div>
+
       <BlogFive />
       <SFooter />
     </div>
