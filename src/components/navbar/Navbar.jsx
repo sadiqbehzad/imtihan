@@ -3,13 +3,16 @@ import "./navbar.css";
 import { useState, useEffect, useCallback } from "react";
 
 const Navbar = (props) => {
-  const { background, color } = props;
+  const { background, color,h3Color } = props;
   const navStyle = {
     backgroundColor: background || "black",
     color: color || "white",
   };
   const navStyleMobile = {
     color: "white",
+  };
+  const h3Style = {
+    color: h3Color || "inherit" 
   };
 
   //Hook for menu arrow:
@@ -133,7 +136,9 @@ const Navbar = (props) => {
       <div className="navbar-container">
         <div className="logo">
           <a href="/">
-            <h3 style={navStyle}>collegium</h3>
+
+            <h3  style={h3Style}>collegium</h3>
+
           </a>
         </div>
         <div
