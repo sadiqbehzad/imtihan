@@ -30,6 +30,7 @@
   text-decoration: none;
 }
 
+
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -116,7 +117,7 @@
   }
   .nav-list {
     display: none;
-}
+ }
   .menu-icon {
     display: flex;
     margin-right: 12px;
