@@ -16,6 +16,7 @@
     align-items: center;
     margin: 1px;
     box-sizing: border-box;
+
 }
 
 .blogOne-text {
@@ -24,18 +25,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    padding: 4vw;
-    padding-bottom: 2vw;
+    padding: 2vw 6vw 0vw 6vw;
     box-sizing: border-box;
     flex: 0.5;
 }
-.blogOne-title{
-    margin-bottom: 3vw;
+.blogOne-title h2{
+    margin-bottom: 2vw;
 }
 .blogOne-description{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.blogOne-description p{
+    font-size: 1.2vw;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .blogOne-date-button {
@@ -49,18 +54,21 @@
     box-sizing: border-box;
 }
 .blogOne-date-button p {
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 .blogOne-pic{
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 0.5;
+    
+    height: 25vw;
 }
 .blogOne-pic img {
     object-fit: cover;
     width: 100%;
-    height: 25vw;
+    height: 100%;
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -71,6 +79,10 @@
     .blogOne {
         flex-direction: column;
         margin: 0.9px;
+    }
+    .blogOne-text {
+        padding: 10px;
+
     }
     .blogOne-date-button p {
         font-size: 12px;
@@ -83,12 +95,12 @@
         height: 200px;
     }
 
-    .blogOne-title{
-        font-size: 12px;
+    .blogOne-title h2{
+        font-size: 16px;
         padding-top: 16px;
         box-sizing: border-box;
     }
-    .blogOne-description{
+    .blogOne-description p{
         font-size: 12px;
     }
 }

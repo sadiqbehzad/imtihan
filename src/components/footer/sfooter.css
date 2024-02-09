@@ -40,7 +40,7 @@
     width: 10vw;
     margin-left: -2.5vw;
 }
-.collegium-slogan {
+.collegium-slogan p {
     font-size: 1.1vw;
     margin-top: 0;
 }
@@ -78,7 +78,7 @@
 .sfooter-about .sfooter-links li{
     list-style-type: none;
     font-size: 1.1vw;
-    padding-bottom: 0.5vw;
+    padding-bottom: 0vw;
     margin-bottom: 0;
     
 }
@@ -102,6 +102,9 @@
     border-top: 1px dashed white;
     width: 100%;
     height: 2vw;
+
+}
+.sfooter-copyright p {
     font-size: 1vw;
 }
 
@@ -116,7 +119,7 @@
         width: 100px;
         margin-left: -5px;
     }
-    .collegium-slogan {
+    .collegium-slogan p {
         font-size: 12px;
     }
     .sfooter-socialmedia {
@@ -131,8 +134,13 @@
         margin-top: 10px;
 
     }
+
     .sfooter-about h5, .sfooter-contacts h5{
         margin-top: 10px;
+        font-size: 14px;
+    }
+    .sfooter-about h5::after, .sfooter-contacts h5::after{
+        content: ":";
     }
     .sfooter-about .sfooter-links, .sfooter-contacts .sfooter-contacts-links {
         padding-left: 0;
@@ -156,8 +164,10 @@
         padding: 0;
     }
     .sfooter-copyright {
-        font-size: 10px;
         height: 20px;
+    }
+    .sfooter-copyright p {
+        font-size: 10px;
     }
 
 }

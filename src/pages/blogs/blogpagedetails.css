@@ -37,10 +37,25 @@
     padding-bottom: 1vw;
 }
 .blogpageFullArticle-title h2 {
-    padding-bottom: 0.5vw;
+    padding-bottom: 0;
+    font-size: 2vw;
+}
+.blogpageFullArticle-title p {
+    font-size: 1.2vw;
+    margin-top: 0.3vw;
+    margin-bottom: 0;
 }
 .blogpageFullArticle-description {
     margin-top: 2vw;
+    
+}
+.blogpageFullArticle-description p{
+    font-size: 1.2vw;
+    margin-top: 0.3vw;
+    
+}
+.blogpageFullArticle-description h2{
+    font-size: 2vw;
     
 }
 .recent-posts {
@@ -65,7 +80,7 @@
     .blogpageFullArticle-title p {
         font-size: 12px;
     }
-    .blogpageFullArticle-description {
+    .blogpageFullArticle-description p{
         font-size: 12px;
     }
     .blogpageFullArticle-description h2{

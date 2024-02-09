@@ -44,6 +44,13 @@
 .blogslist-text .blogslist-title, .blogslist-text .blogslist-description {
     margin-bottom: 1vw;
 }
+.blogslist-title h2 {
+    font-size: 1.7vw;
+}
+.blogslist-description p {
+    font-size: 1.2vw;
+}
+
 .blogslist-date-button {
     display: flex;
     flex-direction: row;
@@ -55,8 +62,8 @@
     box-sizing: border-box;
     
 }
-.blogslist-date-button p {
-    font-size: 1vw;
+.blogslist-date-button p, .blogslist-description p {
+    font-size: 1.2vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -70,14 +77,14 @@
     .blogslist-pics img {
         height: 200px;
     }
-    .blogslist-text .blogslist-title {
-        font-size: 12px;
-        padding-top: 16px;
-        box-sizing: border-box;
+
+    .blogslist-title h2 {
+        font-size: 16px;
     }
-    .blogslist-text .blogslist-description {
+    .blogslist-description p {
         font-size: 12px;
     }
+
     .blogslist-date-button p {
         font-size: 12px;
     }

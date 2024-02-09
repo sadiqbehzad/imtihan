@@ -3,16 +3,13 @@ import "./navbar.css";
 import { useState, useEffect, useCallback } from "react";
 
 const Navbar = (props) => {
-  const { background, color,h3Color } = props;
+  const { background, color } = props;
   const navStyle = {
     backgroundColor: background || "black",
     color: color || "white",
   };
   const navStyleMobile = {
     color: "white",
-  };
-  const h3Style = {
-    color: h3Color || "inherit" 
   };
 
   //Hook for menu arrow:
@@ -134,11 +131,9 @@ const Navbar = (props) => {
   return (
     <nav class="navbar" style={navStyle}>
       <div className="navbar-container">
-        <div className="logo">
+        <div className="navbar-logo">
           <a href="/">
-
-            <h3  style={h3Style}>collegium</h3>
-
+            <h2 style={navStyle}>collegium</h2>
           </a>
         </div>
         <div
@@ -152,125 +147,137 @@ const Navbar = (props) => {
         <ul
           className={`nav-list ${isNavListVisible ? "show" : ""}`}
           onClick={(e) => e.stopPropagation()}
-          style={navStyleMobile}
+          // style={navStyleMobile}
         >
           <li className="close-button" onClick={closeMenu}>
             &#10006;
           </li>
-          <li>
-            <a
-              className="nav-link"
-              href="/"
+          <a href="/" style={isNavListVisible ? navStyleMobile : navStyle}>
+            <li className="nav-link-menu">Home</li>
+          </a>
+          <li
+            className="nav-link-menu"
+            onClick={toggleServicesMenu}
+            style={isNavListVisible ? navStyleMobile : navStyle}
+          >
+            Services<span className="service-tab-space">&emsp;</span>
+            <span
+              className="dropdown-arrow"
               style={isNavListVisible ? navStyleMobile : navStyle}
             >
-              Home
-            </a>
-          </li>
-          <li>
-            <div
-              className="nav-link"
-              onClick={toggleServicesMenu}
-              style={isNavListVisible ? navStyleMobile : navStyle}
-            >
-              Services&nbsp;&nbsp;&nbsp;
-              <span className="arrow">{isServicesArrowChanged}</span>
-            </div>
+              {isServicesArrowChanged}
+            </span>
             {isServicesVisible && (
-              <ul className="sub-menu">
-                <li>
-                  <a className="nav-link" href="/owners">
-                    Owners
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="/developers">
-                    Developers
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="/projectteam">
-                    Project Team
-                  </a>
-                </li>
+              <ul
+                className="sub-menu"
+                style={isNavListVisible ? navStyleMobile : navStyle}
+              >
+                <a
+                  href="/owners"
+                  style={isNavListVisible ? navStyleMobile : navStyle}
+                >
+                  <li className="nav-link-submenu">Owners</li>
+                </a>
+                <a
+                  href="/developers"
+                  style={isNavListVisible ? navStyleMobile : navStyle}
+                >
+                  <li className="nav-link-submenu">Developers</li>
+                </a>
+                <a
+                  href="/projectteam"
+                  style={isNavListVisible ? navStyleMobile : navStyle}
+                >
+                  <li className="nav-link-submenu">Project Team</li>
+                </a>
               </ul>
             )}
           </li>
-          <li>
-            <div
-              className="nav-link"
-              onClick={toggleResourcesMenu}
+          <li
+            className="nav-link-menu"
+            onClick={toggleResourcesMenu}
+            style={isNavListVisible ? navStyleMobile : navStyle}
+          >
+            Resources<span className="resources-tab-space">&emsp;</span>
+            <span
+              className="dropdown-arrow"
               style={isNavListVisible ? navStyleMobile : navStyle}
             >
-              Resources&nbsp;&nbsp;&nbsp;
-              <span className="arrow">{isResourcesArrowChanged}</span>
-            </div>
+              {isResourcesArrowChanged}
+            </span>
             {isResourcesVisible && (
-              <ul className="sub-menu">
-                <li>
-                  <a className="nav-link" href="/community">
-                    Community
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="/blogs">
-                    Blogs
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="/userstories">
-                    User Stories
-                  </a>
-                </li>
+              <ul
+                className="sub-menu"
+                style={isNavListVisible ? navStyleMobile : navStyle}
+              >
+                <a
+                  href="/community"
+                  style={isNavListVisible ? navStyleMobile : navStyle}
+                >
+                  <li className="nav-link-submenu">Community</li>
+                </a>
+                <a
+                  href="/blogs"
+                  style={isNavListVisible ? navStyleMobile : navStyle}
+                >
+                  <li className="nav-link-submenu">Blogs</li>
+                </a>
+                <a
+                  href="/userstories"
+                  style={isNavListVisible ? navStyleMobile : navStyle}
+                >
+                  <li className="nav-link-submenu">User Stories</li>
+                </a>
               </ul>
             )}
           </li>
-          <li>
-            <div
-              className="nav-link"
-              onClick={toggleAboutUsMenu}
+          <li
+            className="nav-link-menu"
+            onClick={toggleAboutUsMenu}
+            style={isNavListVisible ? navStyleMobile : navStyle}
+          >
+            About Us<span className="aboutus-tab-space">&emsp;</span>
+            <span
+              className="dropdown-arrow"
               style={isNavListVisible ? navStyleMobile : navStyle}
             >
-              About Us&nbsp;&nbsp;&nbsp;
-              <span className="arrow">{isAboutUsArrowChanged}</span>
-            </div>
+              {isAboutUsArrowChanged}
+            </span>
             {isAboutUsVisible && (
-              <ul className="sub-menu">
-                <li>
-                  <a className="nav-link" href="/who-we-are">
-                    Who We Are
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="/projects">
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="/partners">
-                    Partners
-                  </a>
-                </li>
+              <ul
+                className="sub-menu"
+                style={isNavListVisible ? navStyleMobile : navStyle}
+              >
+                <a
+                  href="/who-we-are"
+                  style={isNavListVisible ? navStyleMobile : navStyle}
+                >
+                  <li className="nav-link-submenu">Who We Are</li>
+                </a>
+                <a
+                  href="/projects"
+                  style={isNavListVisible ? navStyleMobile : navStyle}
+                >
+                  <li className="nav-link-submenu">Projects</li>
+                </a>
+                <a
+                  href="/partners"
+                  style={isNavListVisible ? navStyleMobile : navStyle}
+                >
+                  <li className="nav-link-submenu">Partners</li>
+                </a>
               </ul>
             )}
           </li>
-          <li>
-            <a
-              className="nav-link"
-              href="/careers"
-              style={isNavListVisible ? navStyleMobile : navStyle}
-            >
-              Careers
-            </a>
-          </li>
-          <li>
-            <a
-              className="nav-link"
-              href="/faqs"
-              style={isNavListVisible ? navStyleMobile : navStyle}
-            >
-              FAQs
-            </a>
-          </li>
+          <a
+            href="/careers"
+            style={isNavListVisible ? navStyleMobile : navStyle}
+          >
+            <li className="nav-link-menu">Careers</li>
+          </a>
+          <a href="/faqs" style={isNavListVisible ? navStyleMobile : navStyle}>
+            <li className="nav-link-menu">FAQs</li>
+          </a>
         </ul>
       </div>
     </nav>

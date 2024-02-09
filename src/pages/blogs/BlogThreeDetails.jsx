@@ -1,5 +1,11 @@
+import Navbar from "../../components/navbar/Navbar";
+
 const BlogThreeDetails = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Navbar background="white" color="black" />
+    </div>
+  );
 };
 
 export default BlogThreeDetails;
